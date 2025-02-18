@@ -83,7 +83,7 @@ npx cap open android
 
 ## 📝 Contribuciones
 
-1. Crea una rama `dev/tu-nombre`.
+1. Crea una rama `dev/tu-nombre` que derive de `development`
 2. Realiza los cambios y realiza commits claros.
 3. Sube tu rama al repositorio y abre un **pull request a `development`**.
 4. Una vez aprobados los cambios en `development`, se fusionarán en `main`.
