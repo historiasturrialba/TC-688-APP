@@ -1,50 +1,90 @@
-# React + TypeScript + Vite
+# 📌 TC-688-APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TC-688-APP es una aplicación web desarrollada en **React** con **Vite**, diseñada como parte del proyecto **TC-688: Escribimos la historia de las comunidades de Turrialba**. La aplicación permite a los usuarios explorar la historia, cultura y actividades de cada comunidad a través de juegos interactivos, galerías de imágenes e información detallada. Posteriormente, la app se convertirá en una APK utilizando **Capacitor** para ejecutarse en tablets sin conexión a Internet.
 
-Currently, two official plugins are available:
+## 🚀 Sistema de Trabajo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El desarrollo del proyecto sigue una estructura basada en ramas para asegurar una organización clara y eficiente:
 
-## Expanding the ESLint configuration
+- **main** → Rama estable con la última versión aprobada de la aplicación.
+- **development** → Rama de integración donde se prueban y consolidan nuevas funciones antes de fusionarse en `main`.
+- **dev/nombre-del-contribuidor** → Cada colaborador trabaja en su propia rama individual. Ejemplo:
+  - dev/jose-lopez
+  - dev/maria-gomez
+  - dev/carlos-perez
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 🔹 Flujo de Trabajo
+1️⃣ Cada colaborador trabaja en su **propia rama**.
+2️⃣ Cuando finaliza una funcionalidad, hace un **pull request a `development`**.
+3️⃣ Una vez que `development` es estable, se fusiona en `main`.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠 Instalación y Configuración
+
+### 1️⃣ Clonar el Repositorio
+
+Clona el repositorio en tu máquina local:
+```
+git clone https://github.com/historiasturrialba/TC-688-APP.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Accede a la carpeta del proyecto:
 ```
+cd TC-688-APP
+```
+
+### 2️⃣ Instalar Dependencias
+
+Ejecuta el siguiente comando para instalar las dependencias del proyecto:
+```
+npm install
+```
+
+### 3️⃣ Ejecutar la Aplicación en Desarrollo
+
+Para iniciar el servidor de desarrollo:
+```
+npm run dev
+```
+Esto abrirá la aplicación en tu navegador en `http://localhost:5173/`.
+
+### 4️⃣ Construcción para Producción
+
+Si deseas generar una versión optimizada para producción:
+```
+npm run build
+```
+
+### 5️⃣ Convertir la App en APK (Usando Capacitor)
+
+Inicializar Capacitor en el proyecto:
+```
+npx cap init TC-688-APP com.tcu.tc688app
+```
+
+Agregar la plataforma Android:
+```
+npx cap add android
+```
+
+Construir la aplicación web y copiar los archivos a Capacitor:
+```
+npm run build
+npx cap copy
+```
+
+Abrir en Android Studio para generar el APK:
+```
+npx cap open android
+```
+
+---
+
+## 📝 Contribuciones
+
+1. Crea una rama `dev/tu-nombre` que derive de `development`
+2. Realiza los cambios y realiza commits claros.
+3. Sube tu rama al repositorio y abre un **pull request a `development`**.
+4. Una vez aprobados los cambios en `development`, se fusionarán en `main`.
+
