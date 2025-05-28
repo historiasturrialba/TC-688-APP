@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Historias Turrialba</string>
+    <string name="title_activity_main">Historias Turrialba</string>
+    <string name="package_name">com.historias.turrialba</string>
+    <string name="custom_url_scheme">com.historias.turrialba</string>
+</resources>

@@ -1,10 +1,50 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-createRoot(document.getElementById('root')!).render(
+import Home from "./App";
+import HistoriaPage from "./pages/historia";
+import JuegosPage from "./pages/juegos";
+
+// Historia
+import SabiasQuePage from "./pages/historia/sabias-que";
+import AnecdotasPage from "./pages/historia/anecdotas";
+import ChistesPage from "./pages/historia/chistes";
+import LeyendasPage from "./pages/historia/leyendas";
+import OrigenIsabelPage from "./pages/historia/origen-isabel";
+
+// Juegos
+import TriviaPage from "./pages/juegos/trivia";
+import SopaLetrasPage from "./pages/juegos/sopa-letras";
+import MemoriaPage from "./pages/juegos/memoria";
+import MatchingPage from "./pages/juegos/matching";
+import RompecabezasPage from "./pages/juegos/rompecabezas";
+
+import "./index.css";
+
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <BrowserRouter>
+      <Routes>
+          {/* Página de inicio */}
+          <Route index element={<Home />} />
+
+          {/* Historia */}
+          <Route path="historia" element={<HistoriaPage />} />
+          <Route path="historia/sabias-que" element={<SabiasQuePage />} />
+          <Route path="historia/anecdotas" element={<AnecdotasPage />} />
+          <Route path="historia/chistes" element={<ChistesPage />} />
+          <Route path="historia/leyendas" element={<LeyendasPage />} />
+          <Route path="historia/origen-isabel" element={<OrigenIsabelPage />} />
+
+          {/* Juegos */}
+          <Route path="juegos" element={<JuegosPage />} />
+          <Route path="juegos/trivia" element={<TriviaPage />} />
+          <Route path="juegos/sopa-letras" element={<SopaLetrasPage />} />
+          <Route path="juegos/memoria" element={<MemoriaPage />} />
+          <Route path="juegos/matching" element={<MatchingPage />} />
+          <Route path="juegos/rompecabezas" element={<RompecabezasPage />} />
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
+);
