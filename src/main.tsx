@@ -11,7 +11,7 @@ import SabiasQuePage from "./pages/historia/sabias-que";
 import AnecdotasPage from "./pages/historia/anecdotas";
 import ChistesPage from "./pages/historia/chistes";
 import LeyendasPage from "./pages/historia/leyendas";
-import OrigenIsabelPage from "./pages/historia/origen-isabel";
+import OrigenDePage from "./pages/historia/origen-de";
 
 // Juegos
 import TriviaPage from "./pages/juegos/trivia";
@@ -35,7 +35,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="historia/anecdotas" element={<AnecdotasPage />} />
           <Route path="historia/chistes" element={<ChistesPage />} />
           <Route path="historia/leyendas" element={<LeyendasPage />} />
-          <Route path="historia/origen-isabel" element={<OrigenIsabelPage />} />
+          <Route path="historia/origen-de" element={<OrigenDePage />} />
 
           {/* Juegos */}
           <Route path="juegos" element={<JuegosPage />} />

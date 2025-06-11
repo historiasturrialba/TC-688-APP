@@ -31,7 +31,7 @@ export default function Home() {
             <div className="px-6">
               <div className="aspect-video relative overflow-hidden rounded-lg">
                 <img
-                  src="/TCU-688-portada.png"
+                  src="historia/historia.png"
                   alt="Historia de Turrialba"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
@@ -57,7 +57,7 @@ export default function Home() {
             <div className="px-6">
               <div className="aspect-video relative overflow-hidden rounded-lg">
                 <img
-                  src="/TCU-688-portada.png"
+                  src="/juegos/juegos.png"
                   alt="Juegos educativos"
                   className="absolute inset-0 w-full h-full object-cover opacity-90 rounded-lg"
                 />

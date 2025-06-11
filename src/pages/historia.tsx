@@ -22,8 +22,8 @@ export default function HistoriaPage() {
     },
     {
       titulo: "Origen de la Isabel",
-      url: "/historia/origen-isabel",
-      imagen: "/historia/leyendas.png", // Usa una imagen temporal si no hay una específica
+      url: "/historia/origen-de",
+      imagen: "/historia/leyendas.png", 
     },
   ];
 
