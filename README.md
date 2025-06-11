@@ -7,7 +7,6 @@ TC-688-APP es una aplicación web desarrollada en **React** con **Vite**, diseñ
 El desarrollo del proyecto sigue una estructura basada en ramas para asegurar una organización clara y eficiente:
 
 - **main** → Rama estable con la última versión aprobada de la aplicación.
-- **development** → Rama de integración donde se prueban y consolidan nuevas funciones antes de fusionarse en `main`.
 - **dev/nombre-del-contribuidor** → Cada colaborador trabaja en su propia rama individual. Ejemplo:
   - dev/jose-lopez
   - dev/maria-gomez
@@ -15,8 +14,7 @@ El desarrollo del proyecto sigue una estructura basada en ramas para asegurar un
 
 ### 🔹 Flujo de Trabajo
 1️⃣ Cada colaborador trabaja en su **propia rama**.
-2️⃣ Cuando finaliza una funcionalidad, hace un **pull request a `development`**.
-3️⃣ Una vez que `development` es estable, se fusiona en `main`.
+2️⃣ Cuando finaliza una funcionalidad, hace un **pull request a `main`**.
 
 ---
 
@@ -83,8 +81,7 @@ npx cap open android
 
 ## 📝 Contribuciones
 
-1. Crea una rama `dev/tu-nombre` que derive de `development`
+1. Crea una rama `dev/tu-nombre` que derive de `main`
 2. Realiza los cambios y realiza commits claros.
-3. Sube tu rama al repositorio y abre un **pull request a `development`**.
-4. Una vez aprobados los cambios en `development`, se fusionarán en `main`.
+3. Sube tu rama al repositorio y abre un **pull request a `main`**.
 
