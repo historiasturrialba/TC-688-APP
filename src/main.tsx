@@ -2,9 +2,11 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import SideBar from "./components/menu/side-menu";
 import Home from "./App";
 import HistoriaPage from "./pages/historia";
 import JuegosPage from "./pages/juegos";
+import GaleriaPage from "./pages/galeria/galeria";
 
 // Historia
 import SabiasQuePage from "./pages/historia/sabias-que";
@@ -25,6 +27,7 @@ import "./index.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
+    <SideBar />
       <Routes>
           {/* Página de inicio */}
           <Route index element={<Home />} />
@@ -44,6 +47,9 @@ createRoot(document.getElementById("root")!).render(
           <Route path="juegos/memoria" element={<MemoriaPage />} />
           <Route path="juegos/matching" element={<MatchingPage />} />
           <Route path="juegos/rompecabezas" element={<RompecabezasPage />} />
+
+          {/* Página de galería */}
+          <Route path="galeria" element={<GaleriaPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
