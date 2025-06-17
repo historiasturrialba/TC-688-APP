@@ -1,0 +1,7 @@
+[
+  { "id": 1, "imagen": "/juegos/memoria.png", "alt": "Item 1" },
+  { "id": 2, "imagen": "/juegos/trivia.png", "alt": "Item 2" },
+  { "id": 3, "imagen": "/juegos/matching.png", "alt": "Item 3" },
+  { "id": 4, "imagen": "/juegos/assets/juego-memoria/don-pepe.png", "alt": "Item 4" },
+  { "id": 5, "imagen": "/juegos/assets/juego-memoria/don-pepe.png", "alt": "Item 4" }
+]
