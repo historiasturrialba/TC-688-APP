@@ -31,7 +31,7 @@ export default function Home() {
             <div className="px-6">
               <div className="aspect-video relative overflow-hidden rounded-lg">
                 <img
-                  src="/TCU-688-portada.png"
+                  src="historia/historia.png"
                   alt="Historia de Turrialba"
                   className="absolute inset-0 w-full h-full object-cover rounded-lg"
                 />
@@ -57,7 +57,7 @@ export default function Home() {
             <div className="px-6">
               <div className="aspect-video relative overflow-hidden rounded-lg">
                 <img
-                  src="/TCU-688-portada.png"
+                  src="/juegos/juegos.png"
                   alt="Juegos educativos"
                   className="absolute inset-0 w-full h-full object-cover opacity-90 rounded-lg"
                 />
@@ -70,6 +70,31 @@ export default function Home() {
                 className="inline-block w-full bg-green-500 hover:bg-green-600 text-white text-center py-3 px-4 rounded-md font-medium transition mb-6"
               >
                 Jugar Ahora
+              </Link>
+            </div>
+          </div>
+          {/* Galería Section */}
+          <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 text-center w-full max-w-sm">
+            <div className="p-6">
+              <h2 className="text-2xl font-bold text-gray-800">Galería</h2>
+              <p className="text-gray-600 mt-1">Imágenes de las comunidades</p>
+            </div>
+            <div className="px-6">
+              <div className="aspect-video relative overflow-hidden rounded-lg">
+                <img
+                  src="/galeria/galeria.png"
+                  alt="Galería de imágenes"
+                  className="absolute inset-0 w-full h-full object-cover opacity-90 rounded-lg"
+                />
+              </div>
+              <p className="mt-6 mb-4 text-gray-700">
+                Explora fotos y recuerdos de las comunidades de Turrialba.
+              </p>
+              <Link
+                to="/galeria"
+                className="inline-block w-full bg-purple-500 hover:bg-purple-600 text-white text-center py-3 px-4 rounded-md font-medium transition mb-6"
+              >
+                Ver Galería
               </Link>
             </div>
           </div>

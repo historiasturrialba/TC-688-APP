@@ -1,0 +1,111 @@
+  {
+    "categories": [
+      {
+        "id": 1,
+        "title": "Salon comunal",
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/SalonComunal1.jpg",
+            "title": "Paisaje 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/SalonComunal2.jpg",
+            "title": "Paisaje 2"
+          },
+          {
+            "id": 3,
+            "url": "/galeria/SalonComunal3.jpg",
+            "title": "Paisaje 3"
+          },
+          {
+            "id": 4,
+            "url": "/galeria/SalonComunal4.jpg",
+            "title": "Paisaje 4"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Servicios publicos",
+        "images": [
+          {
+            "id": 6,
+            "url": "/galeria/InstalacionTuberias1.jpg",
+            "title": "Retrato 1"
+          },
+          {
+            "id": 7,
+            "url": "/galeria/InstalacionTuberias2.jpg",
+            "title": "Retrato 2"
+          },
+          {
+            "id": 8,
+            "url": "/galeria/InstalacionTuberias3.jpg",
+            "title": "Retrato 3"
+          },
+          {
+            "id": 9,
+            "url": "/galeria/InstalacionTuberias4.jpg",
+            "title": "Retrato 4"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Actualidad",
+        "images": []
+      },
+      {
+        "id": 4,
+        "title": "Deporte",
+        "images": []
+      },
+      {
+        "id": 5,
+        "title": "Infraestructura",
+        "images": []
+      },
+      {
+        "id": 6,
+        "title": "Artesanias",
+        "images": []
+      },
+      {
+        "id": 7,
+        "title": "Celebraciones",
+        "images": []
+      },
+      {
+        "id": 8,
+        "title": "Familias",
+        "images": []
+      },
+      {
+        "id": 9,
+        "title": "Objetos antiguos",
+        "images": []
+      },
+      {
+        "id": 10,
+        "title": "Recreacion",
+        "images": []
+      },
+      {
+        "id": 11,
+        "title": "Religion",
+        "images": []
+      },
+      {
+        "id": 13,
+        "title": "Terrenos",
+        "images": []
+      },
+      {
+        "id": 14,
+        "title": "Trabajo y locales",
+        "images": []
+      }
+    ]
+  }
