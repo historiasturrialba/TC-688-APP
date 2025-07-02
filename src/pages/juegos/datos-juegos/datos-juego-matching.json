@@ -1,0 +1,8 @@
+[
+  { "id": 1, "imagen": "/juegos/assets/matching/iglesia.png", "nombre": "Iglesia", "alt": "Iglesia" },
+  { "id": 2, "imagen": "/juegos/assets/matching/plaza.png", "nombre": "Plaza", "alt": "Plaza" },
+  { "id": 3, "imagen": "/juegos/assets/matching/parque.png", "nombre": "Parque", "alt": "Parque" },
+  { "id": 4, "imagen": "/juegos/assets/matching/iglesia.png", "nombre": "Biblioteca", "alt": "Biblioteca" },
+  { "id": 5, "imagen": "/juegos/assets/matching/plaza.png", "nombre": "Hospital", "alt": "Hospital" },
+  { "id": 6, "imagen": "/juegos/assets/matching/parque.png", "nombre": "Escuela", "alt": "Escuela" }
+]
