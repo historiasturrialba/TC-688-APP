@@ -162,15 +162,6 @@ export default function MatchingPage() {
 
   return (
     <div className="min-h-screen p-6 bg-gradient-to-b from-yellow-100 via-blue-50 to-green-100 relative">
-      {/* Flecha para volver */}
-      <button
-        onClick={() => window.history.back()}
-        className="absolute top-4 left-4 text-blue-700 hover:text-blue-900 text-3xl font-bold z-10"
-        aria-label="Volver"
-      >
-        ⬅
-      </button>
-
       <h1 className="text-4xl font-bold text-center mb-4 text-blue-700">
         🎯 Juego de Matching
       </h1>
