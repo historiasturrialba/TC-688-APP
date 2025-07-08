@@ -1,12 +1,21 @@
+import { Link } from "react-router-dom";
+import WordSearchBoard from "../../components/sopa-letras/word-search-board";
+
 export default function SopaLetrasPage() {
   return (
-    <div className="min-h-screen">
-      <div className="rounded-xl bg-muted/50 p-8">
-        <h1 className="text-4xl font-bold text-center mb-6">Página de Sopa de Letras</h1>
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-lg text-muted-foreground">Aquí va el contenido de la página Sopa de Letras</p>
-        </div>
+    <div className="min-h-screen p-8">
+      <div className="flex justify-center mb-4">
+        <Link
+          to="/juegos"
+          className="text-blue-500 hover:underline flex items-center"
+        >
+          <span className="mr-2">←</span> Volver a Juegos
+        </Link>
       </div>
+
+      <h1 className="text-4xl font-bold text-center mb-6">Sopa de Letras</h1>
+
+      <WordSearchBoard />
     </div>
-  )
+  );
 }
