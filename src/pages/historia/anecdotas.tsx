@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import data from "./datos-historia/datos-anedotas.json";
+import data from "../../data/datos-anedotas.json";
 
 interface Anecdota {
   id: number;
