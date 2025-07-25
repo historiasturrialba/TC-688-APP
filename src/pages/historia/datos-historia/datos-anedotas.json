@@ -1,32 +1,220 @@
 [
   {
     "id": 1,
-    "titulo": "La fiesta de la cosecha",
-    "descripcion": "Cada año, los vecinos se reunían para celebrar la cosecha con música, comida y bailes típicos. Era una tradición que unía generaciones."
+    "titulo": "La historia de un guaquero",
+    "descripcion": "“A mi hermano le gustaba andar buscando tumbas indígenas y en una de tantas, habían encontrado una gran cantidad de piezas indígenas, después de esto, él y sus compañeros sintieron que les empezaban a tirar terrones de tierra, se cree que fue el jefe de los indígenas que quería espantarlos.”",
+    "lugar": "La Isabel",
+    "fuente": "Flor Solano"
   },
   {
     "id": 2,
-    "titulo": "El apagón misterioso",
-    "descripcion": "Una noche, todo el pueblo quedó a oscuras. Mientras esperaban que volviera la luz, las familias contaban historias a la luz de las velas."
+    "titulo": "Las carrozas de las locas",
+    "descripcion": "“Actualmente se tiene la costumbre de que los primero de enero a las 2 pm salen carrozas con hombres vestidos de mujer desfilando por las calles y son conocidas como las carrozas de las locas.”",
+    "fuente": "Melania Umaña Arguedas y Mariangela Alvarado Núñez"
   },
   {
     "id": 3,
-    "titulo": "La vaca que cruzaba la escuela",
-    "descripcion": "Una vaca traviesa solía escaparse de su corral y pasar tranquilamente por el patio de la escuela, interrumpiendo las clases entre risas."
+    "titulo": "Paseo a PejiValle",
+    "descripcion": "“Doña Elva cuenta que cuando estaba pequeña caminaba hasta PejiValle, para ella eso era un paseo a pesar de que caminaba 4 horas para llegar, lo disfrutaba mucho. Iba con su prima a conseguir pan, miel y otros artículos que necesitaban.”",
+    "fuente": "Elva Monge Mora"
   },
   {
     "id": 4,
-    "titulo": "La fiesta de la cosecha",
-    "descripcion": "Cada año, los vecinos se reunían para celebrar la cosecha con música, comida y bailes típicos. Era una tradición que unía generaciones."
+    "titulo": "Reuniones de chicha",
+    "descripcion": "“Greis recuerda que antes algunas personas de la comunidad se reunían para hacer chicha. Lo hacían con trozos de dulce de caña y lo dejaban fermentar con maíz o masa, y cuando estaba lista, las personas se lo tomaban y armaban fiesta.”",
+    "fuente": "Greis Navarro Granado"
   },
   {
     "id": 5,
-    "titulo": "El apagón misterioso",
-    "descripcion": "Una noche, todo el pueblo quedó a oscuras. Mientras esperaban que volviera la luz, las familias contaban historias a la luz de las velas."
+    "titulo": "Iglesia Católica",
+    "descripcion": "“Manuel menciona que la iglesia católica que está cerca de la hacienda es muy representativa para la comunidad porque antes para ir a la iglesia debía viajar hasta el centro de Turrialba, pero el patrón de la hacienda decidió donar un espacio para la construcción de la iglesia católica. Esta no es tan antigua; tiene alrededor de unos veinte años de antigüedad.”",
+    "lugar": "La Isabel",
+    "fuente": "Manuel Salas Bravo"
   },
   {
     "id": 6,
-    "titulo": "La vaca que cruzaba la escuela",
-    "descripcion": "Una vaca traviesa solía escaparse de su corral y pasar tranquilamente por el patio de la escuela, interrumpiendo las clases entre risas."
+    "titulo": "Jorge de Bravo",
+    "descripcion": "“Sara cuenta que cuando estaba en la escuela había un muchacho, Jorge de Bravo, era muy inteligente, todo lo aprendía desde su casa pero que lastimosamente murió en una motocicleta.”",
+    "fuente": "Sara Sojo Brenes"
+  },
+  {
+    "id": 8,
+    "titulo": "Bailes de la época",
+    "descripcion": "“Antes eran muy muy buenos, aquí hacían bailes y se ponía como un gallinero del montón de gente, en ese entonces se cobraba 50 colones de entrada. La música que sonaba era música comercial: románticas, baladas, cumbia, merengue, salsa y música disco. Grupos como los Hicosos, los Alegrisimos, Tabo Gaban, después salieron grupos como Blanco y Negro y todos esos más nuevillos. Aquí los bailes empezaban a las 3 de la tarde y generalmente terminaban como a las 8 de la noche.”",
+    "fuente": "Walter de Los Millers"
+  },
+  {
+    "id": 9,
+    "titulo": "El significado de la palabra Maje en los tiempos de antes",
+    "descripcion": "“Ahora se usa mucho la palabra “mae”, pero antes esa palabra me acuerdo cuando yo estaba carajillo y mi hermano mayor iba a Turrialba a ver una novia que tenía ahí, cuando pasaba por el puente negro un día un carajo que le decían “pica” le dijo “maje” y mi hermano lo fue a buscar con un machete para pegarlo, porque antes esta palabra significaba que era un “cuernudo” y la mujer lo engañaba con otro.”",
+    "fuente": "Walter Los Millers"
+  },
+  {
+    "id": 10,
+    "titulo": "La escuela de la comunidad El Mora",
+    "descripcion": "“En el lote donde está la escuela, lo que había era una casita muy vieja de madera que se estaba cayendo, ahí era donde vivía el mandador de esta finca, entonces votaron la casa y extendieron el lote para hacer la escuela, la asociación del Mora fue la que se puso las pilas en eso.”",
+    "fuente": "Walter Los Millers"
+  },
+  {
+    "id": 12,
+    "titulo": "Un viaje a Siquirres",
+    "descripcion": "“Imagina un día entre semana, el tren \"pachuco\" te lleva a Siquirres. Llevabas tu almuerzo para un picnic al llegar. Era una aventura deliciosa, ¡un día cualquiera convertido en recuerdo!”",
+    "fuente": "María Graciela Víquez Víquez"
+  },
+  {
+    "id": 13,
+    "titulo": "Origen del barrio \"Gallina Barata”",
+    "descripcion": "“Le llaman así porque los primeros pobladores eran extremadamente pobres y se robaban las gallinas que había allí para venderlas baratas.”",
+    "fuente": "María Nela Salguero Coto"
+  },
+  {
+    "id": 14,
+    "titulo": "Un castigo peculiar",
+    "descripcion": "“Doña Nela cuenta que, al querer castigar a dos de sus hijos que se peleaban en la plaza, fue a pegarles con una caña. Solo pudo pegarle a uno, ya que el otro salió corriendo, y sin querer, ¡le pegó a su esposo!”",
+    "fuente": "María Nela Salguero Coto"
+  },
+  {
+    "id": 15,
+    "titulo": "Alimentos de los cultivos experimentales",
+    "descripcion": "“Don Manuel comenta que, al trabajar en el CATIE en un campo experimental, los estudiantes extranjeros no estaban interesados en la producción, solo en la nota. Por lo tanto, todo lo que sembraban (tubérculos, yuca, maíz, plátano, etc.) lo regalaban a los trabajadores, siendo así una forma de conseguir alimentos.”",
+    "fuente": "Manuel Zamora Gutiérrez"
+  },
+  {
+    "id": 16,
+    "titulo": "El Mora como cementerio Indígena",
+    "descripcion": "“Tiempo después, cuando comenzaron a construir casas en El Mora, se dieron cuenta de que era un cementerio indígena. Al abrir las calles, empezaron a aparecer muchos rastros indígenas, como una colección de muñecos y objetos de barro.”",
+    "fuente": "Manuel Zamora Gutiérrez"
+  },
+  {
+    "id": 17,
+    "titulo": "Materiales de construcción de viviendas",
+    "descripcion": "“Antes, las casas eran de zócalo (mitad de cemento y mitad de madera). Don Manuel vivió en una casa que estaba sobre \"basas\", que eran como palos de cemento. Además, en El Mora aún queda una casa muy antigua hecha toda de madera y bejuco en el techo.”",
+    "fuente": "Manuel Zamora Gutiérrez"
+  },
+  {
+    "id": 18,
+    "titulo": "Colchones y cobijas peculiares",
+    "descripcion": "“Los colchones se hacían con esteras de hojas de banano, unidas con mecate. Las cobijas eran sacos, que a menudo tenían pulgas.”",
+    "fuente": "Manuel Zamora Gutiérrez"
+  },
+  {
+    "id": 19,
+    "titulo": "Hallazgo indígena en Calle 8",
+    "descripcion": "“Al abrir para meter tuberías en la Calle 8, se hizo un gran hallazgo indígena, incluyendo petates del tamaño de una mesa grande, usados para rituales. Esto indica que El Mora es parte de tierra indígena, aunque el INVU no se dio cuenta al construir.”",
+    "fuente": "ASADA El Mora"
+  },
+  {
+    "id": 20,
+    "titulo": "La muñequita de oro",
+    "descripcion": "“Un señor en Calle 8 arriba encontró una muñequita con jades y de puro oro, que valía una millonada. Sin embargo, el señor, que era alcohólico, la vendió por 3 mil colones. El museo arqueológico de San José la buscó, pero ya no estaba.”",
+    "fuente": "ASADA El Mora"
+  },
+  {
+    "id": 21,
+    "titulo": "La resistencia del oleoducto",
+    "descripcion": "“Cuando RECOPE contrató una empresa para meter el oleoducto, no pudieron tocar El Mora para abrirlo más, ya que es prohibido debido a su importante historia indígena.”",
+    "fuente": "ASADA El Mora"
+  },
+  {
+    "id": 22,
+    "titulo": "Pago con comestibles",
+    "descripcion": "“En la época de 1981-1983, para la construcción de aceras y cunetas, en lugar de dinero, se pagaba con un saco grande de comida y embutidos, lo que era una gran ayuda para las familias de bajos recursos.”",
+    "fuente": "ASADA El Mora"
+  },
+  {
+    "id": 23,
+    "titulo": "Necesidad de hidrantes",
+    "descripcion": "“Doña Analive, quien fue parte del comité para conseguir letrinas (servicios de hueco) porque no había nada en El Mora, sufrió el incendio de su casa. La gente intentó ayudar con baldes de agua, pero no fue suficiente. Esto llevó a la idea de instalar hidrantes.”",
+    "fuente": "ASADA El Mora"
+  },
+  {
+    "id": 24,
+    "titulo": "Castigos de antes",
+    "descripcion": "“Don Geovanny recuerda un \"fajazo\" de su abuelo que le dejó la hebilla marcada. También cuenta que una vez su hermano fue \"asoleado\" por su madre por salir corriendo y meterse donde el vecino, y el castigo de su padre fue con un fajazo y tabasco en la boca.”",
+    "fuente": "Geovanny Valverde Montoya"
+  },
+  {
+    "id": 25,
+    "titulo": "Lavado de ropa",
+    "descripcion": "“Para lavar la ropa, las señoras iban a \"La Viga\", un lugar en el río donde restregaban la ropa en las piedras. En ese mismo río se bañaban las personas, ya que no había agua potable.”",
+    "fuente": "Geovanny Valverde Montoya"
+  },
+  {
+    "id": 26,
+    "titulo": "Fútbol y socialización",
+    "descripcion": "“El fútbol era muy popular. Después de trabajar en la finca, los hombres dejaban sus herramientas y bajaban a la plaza a jugar. Se jugaba hasta las 6 de la tarde, dividiendo la plaza en cuatro para diferentes grupos. Después de jugar, se iban a una poza en La Isabel a bañarse.”",
+    "fuente": "Geovanny Valverde Montoya"
+  },
+  {
+    "id": 27,
+    "titulo": "Hallazgos arqueológicos en el terreno de doña Analive",
+    "descripcion": "“Doña Analive ha sacado cantidad de cosas en pedazos de su terreno, que antes era un cementerio indígena. Una vez encontró una tortuguita entera, y en otra ocasión, sus hijos encontraron un cofre con oro y de todo, pero un señor se lo llevó. También se dice que un señor del ICE encontró un águila de oro al meter la red de cloacas.”",
+    "fuente": "Doña Analive Núñez Arguedas"
+  },
+  {
+    "id": 28,
+    "titulo": "La inundación del 48",
+    "descripcion": "“Don Javier recuerda una crecida del río en 1948 que fue tan fuerte que se llevó la escuela, que era de madera.”",
+    "fuente": "Jose Javier Guillén Sánchez"
+  },
+  {
+    "id": 29,
+    "titulo": "Caza de “carbuncos”",
+    "descripcion": "“Cuando estaban en mayo, que había mucho calor y la luna alumbraba mucho, se don Javier y sus hermanos iban afuera a buscar carbuncos, los cuales son insectos parecidos a las cucarachas que alumbran en la noche. El que agarraba más carbuncos ganaba.”",
+    "fuente": "Jose Javier Guillén Sánchez"
+  },
+  {
+    "id": 30,
+    "titulo": "El \"Repasto\" y su nombre",
+    "descripcion": "“El barrio El Repasto se llama así porque antes era un lugar lleno de maleza (\"charrales\") donde la gente llevaba el ganado a pastar.”",
+    "fuente": "Teresa Méndez Correa, María Antonia Méndez Correa, y Mario Méndez Correa"
+  },
+  {
+    "id": 31,
+    "titulo": "El \"Palo Encebado\"",
+    "descripcion": "“En los turnos (fiestas comunales), se practicaba un juego donde untaban cera o aceite a un palo, y la gente intentaba subir para alcanzar un premio en la punta. Era tan popular como peligroso.”",
+    "fuente": "Teresa Méndez Correa, María Antonia Méndez Correa, y Mario Méndez Correa"
+  },
+  {
+    "id": 32,
+    "titulo": "Explosión en la cocina",
+    "descripcion": "“Los padres de los Méndez contaban que, cuando no había luz, la madre se levantaba en la madrugada a oscuras, con una candela, para moler el maíz y alistar el almuerzo para su esposo e hijos. ¡Una vez, una cocina de canfín explotó y quemó el ranchito!”",
+    "fuente": "Teresa Méndez Correa, María Antonia Méndez Correa, y Mario Méndez Correa"
+  },
+  {
+    "id": 33,
+    "titulo": "Partos en casa y la cigüeña",
+    "descripcion": "“Cuando había un parto en casa, a los niños los mandaban a jugar a la plaza, y al regresar, ya había un nuevo bebé, o como decían: \"había pasado la cigüeña\".”",
+    "fuente": "Teresa Méndez Correa, María Antonia Méndez Correa, y Mario Méndez Correa"
+  },
+  {
+    "id": 34,
+    "titulo": "Un poeta de la comunidad",
+    "descripcion": "“Don Mario Picado, educador de letras y \"como nieto de Clodomiro Picado\", fue un poeta reconocido en la comunidad. Recibió varias veces los premios nacionales Aquilejo y Cherré por su poesía, aunque, como era común en ese entonces, no vivía de su arte. Murió joven, a los 59 años.”",
+    "fuente": "Rolando Picado Gonzales"
+  },
+  {
+    "id": 35,
+    "titulo": "Comisariatos y el \"fiado\"",
+    "descripcion": "“Antes, existían los comisariatos, donde la mayoría de la gente compraba fiado y pagaba la deuda cuando recibía su salario.”",
+    "fuente": "Adrián Monge"
+  },
+  {
+    "id": 36,
+    "titulo": "El picadillo de chayote \"mosqueado\"",
+    "descripcion": "“Una comida tradicional y muy famosa en los rezos era el picadillo de chayote, que se preparaba de una forma particular: se picaba, lavaba y dejaba escurrir en sacos de manta hasta que se \"mosqueara\" (fermentara un poco) por uno o dos días, adquiriendo un sabor agrio, y luego se le añadía carne.”",
+    "fuente": "Juan Carlos Mora"
+  },
+  {
+    "id": 37,
+    "titulo": "Regalo de gallina enjarrada en bautizos",
+    "descripcion": "“Después de los bautizos, era común obsequiar una gallina enjarrada (con algo envuelto) que solía contener huevos, como un regalo simbólico para el recién bautizado o la familia.”",
+    "fuente": "Juan Carlos Mora"
+  },
+  {
+    "id": 38,
+    "titulo": "Respeto por la autoridad",
+    "descripcion": "“Don Ricardo recuerda cómo antes se respetaba más a la autoridad. Cuenta que en su infancia había un policía \"morenón\" que solía hacer rondas caminando por la comunidad. Cuando los niños lo veían, inmediatamente corrían a guardarse en sus casas, ya que había un alto nivel de respeto hacia la fuerza pública.”",
+    "fuente": "Ricardo González Chaves"
   }
 ]
