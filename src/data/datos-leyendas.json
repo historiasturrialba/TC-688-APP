@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "titulo": "Las brujas",
+    "descripcion": "Se dice que en los tiempos de antes se veían o se escuchaban brujas en la Isabel. Incluso había un objeto que llamaban “cruceta”, que era como una espada que usaba el guardia de paz. Sin embargo, según creencias religiosas, esa cruceta también la utilizaban para alejar a las brujas."
+  },
+  {
+    "id": 2,
+    "titulo": "El espíritu del jefe indígena",
+    "descripcion": "Se dice que en la zona de La Isabel algunas personas excavaron buscando tumbas indígenas y encontraron muchas piezas antiguas. En otra ocasión, mientras hacían un hueco en el mismo lugar, comenzaron a caerles terrones de tierra sin explicación. Se cuenta que era el espíritu del jefe indígena tratando de espantarlos para que no perturbaran su descanso."
+  },
+  {
+    "id": 3,
+    "titulo": "Los duendes",
+    "descripcion": "Antes los duendes eran muy vistos en Isabel. Se cuenta que un niño desapareció mientras jugaba y lo encontraron dentro de una pequeña cueva, con la cabeza atrapada entre dos piedras. Al volver en sí, contó que fueron 'los chiquitos' quienes lo llevaron, prometiéndole una carreta con bueyes."
+  },
+  {
+    "id": 4,
+    "titulo": "La llorona",
+    "descripcion": "En la Isabel era muy común escuchar sobre la llorona del río. Se dice que en los ríos cercanos se escuchan llantos de una mujer que perdió a sus hijos. Algunos ancianos la vinculan a la época de las fincas cafetaleras."
+  },
+  {
+    "id": 5,
+    "titulo": "La novia fantasma",
+    "descripcion": "La leyenda de la novia fantasma de Calle 4. Se dice que en la esquina de esa calle falleció una muchacha que estaba por casarse y que, durante las noches, algunos vecinos han afirmado verla aparecer en ese mismo lugar. En una ocasión, alguien confundió un maniquí vestido de novia con la supuesta aparición, lo que causó gran temor entre los habitantes."
+  },
+  {
+    "id": 6,
+    "titulo": "El cadejo",
+    "descripcion": "Era muy común escuchar que los hombres eran perseguidos por el cadejo. Era un perro grande con los ojos rojos, se decía que si el hombre que era perseguido por el cadejo llegaba a la casa hacer escándalo se lo llevaba, pero si llegaba calmado no hacía nada."
+  },
+  {
+    "id": 7,
+    "titulo": "El cuyeo",
+    "descripcion": "En La Isabel se cuenta una historia extraña sobre un cuyeo, que es un pájaro que emite un sonido misterioso y hace que las personas lo sigan, hipnotizadas por su canto. Mediante su canto siempre lleva a las personas lejos... y luego las pierde en el monte."
+  },
+  {
+    "id": 8,
+    "titulo": "La mona",
+    "descripcion": "Se decía que por La Isabel pasaba la Mona, y mucha gente afirmaba haberla visto. A veces se escuchaban ruidos muy fuertes en los techos, como si algo pesado caminara. Algunos aseguraban haberla sentido cerca, aunque no la vieran, las noches se volvían silenciosas y tensas cuando ella rondaba."
+  },
+  {
+    "id": 9,
+    "titulo": "El caballo blanco",
+    "descripcion": "Los habitantes cuentan que, en el Alto de La Isabel, un caballo blanco aparecía repentinamente y bloqueaba el camino a quienes iban a dejar almuerzos en la finca. Cuando intentaban rodear al caballo desaparecía misteriosamente y reaparecía en otro punto del camino. Se dice que este fenómeno estaba relacionado con el antiguo dueño de la finca, Don Mario Méndez, quien ya falleció."
+  },
+  {
+    "id": 10,
+    "titulo": "La leyenda de la infidelidad",
+    "descripcion": "Se solía decir que donde algunos de los 2 de un matrimonio fuera infiel una bruja se les paraba en el techo y dicen que sonaba, que se escuchaba cuando se paraba en el techo y caminaba asustando a la persona que fuera infiel."
+  }
+]
