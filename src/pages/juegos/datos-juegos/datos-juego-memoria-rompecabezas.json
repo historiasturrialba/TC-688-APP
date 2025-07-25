@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Billetes.jpg",
+    "alt": "Billetes"
+  },
+  {
+    "id": 2,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Boda.jpg",
+    "alt": "Boda"
+  },
+  {
+    "id": 3,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Cabalgata.png",
+    "alt": "Cabalgata"
+  },
+  {
+    "id": 4,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Junta Directiva.png",
+    "alt": "Junta Directiva"
+  },
+  {
+    "id": 5,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/La comandancia.jpeg",
+    "alt": "La comandancia"
+  },
+  {
+    "id": 6,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Machete.jpg",
+    "alt": "Machete"
+  },
+  {
+    "id": 7,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Moneda.jpg",
+    "alt": "Moneda"
+  },
+  {
+    "id": 8,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Objetos antiguos.jpg",
+    "alt": "Objetos antiguos"
+  },
+  {
+    "id": 9,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Parque.jpeg",
+    "alt": "Parque"
+  },
+  {
+    "id": 10,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Placa.jpeg",
+    "alt": "Placa"
+  },
+  {
+    "id": 11,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Procesiones.jpg",
+    "alt": "Procesiones"
+  },
+  {
+    "id": 12,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Reloj.jpg",
+    "alt": "Reloj"
+  },
+  {
+    "id": 13,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Reproductor.jpg",
+    "alt": "Reproductor"
+  },
+  {
+    "id": 14,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Salon Comunal.jpeg",
+    "alt": "Salon Comunal"
+  },
+  {
+    "id": 15,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Tonfa.jpg",
+    "alt": "Tonfa"
+  }
+]

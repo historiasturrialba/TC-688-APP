@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import items from "./datos-juegos/datos-juego-memoria.json";
+import items from "./datos-juegos/datos-juego-memoria-rompecabezas.json";
 
 type Card = {
   id: number;
@@ -18,15 +18,24 @@ export default function MemoriaPage() {
   const [won, setWon] = useState(false);
 
   const shuffleCards = () => {
-    const duplicated = [...items, ...items];
+    // Tomar aleatoriamente 5 elementos únicos del arreglo items
+    const selectedItems = [...items]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 6);
+
+    // Duplicar las 5 cartas seleccionadas para tener pares
+    const duplicated = [...selectedItems, ...selectedItems];
+
+    // Mezclar las cartas
     const shuffled = duplicated
       .map((item) => ({
         ...item,
         matched: false,
-        index: Math.random()
+        index: Math.random(),
       }))
       .sort((a, b) => a.index - b.index);
 
+    // Establecer el nuevo estado del juego
     setCards(shuffled);
     setScore(0);
     setFirstChoice(null);
@@ -95,7 +104,9 @@ export default function MemoriaPage() {
 
       {won && (
         <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold text-green-700 mb-4">🎉 ¡Ganaste! 🎉</h2>
+          <h2 className="text-3xl font-bold text-green-700 mb-4">
+            🎉 ¡Ganaste! 🎉
+          </h2>
           <button
             onClick={shuffleCards}
             className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full text-lg shadow transition"
@@ -111,7 +122,9 @@ export default function MemoriaPage() {
             key={i}
             onClick={() => handleChoice(card)}
             className={`rounded-xl shadow-md p-2 cursor-pointer bg-white hover:scale-105 transition-transform duration-200 ${
-              isFlipped(card) ? "border-4 border-green-400" : "border border-gray-300"
+              isFlipped(card)
+                ? "border-4 border-green-400"
+                : "border border-gray-300"
             }`}
           >
             {isFlipped(card) ? (
