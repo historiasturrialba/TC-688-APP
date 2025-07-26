@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import gameData from "./datos-juegos/datos-juego-matching.json";
+import gameData from "../../data/datos-juego-matching.json";
 
 type GameItem = {
   id: number;
