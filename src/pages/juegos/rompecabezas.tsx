@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import items from "./datos-juegos/datos-juego-memoria-rompecabezas.json";
+import items from "./datos-juegos/datos-juego-rompecabezas.json";
 
 type PuzzlePiece = {
   id: number;
@@ -17,7 +17,6 @@ export default function RompecabezasPage() {
   const [moves, setMoves] = useState(0);
 
   const initializePuzzle = () => {
-    // Crear las 9 piezas del rompecabezas
     const newPieces: PuzzlePiece[] = [];
     for (let i = 0; i < 9; i++) {
       const row = Math.floor(i / 3);
@@ -26,11 +25,10 @@ export default function RompecabezasPage() {
         id: i,
         correctPosition: i,
         currentPosition: i,
-        backgroundPosition: `${-col * 64}px ${-row * 64}px`,
+        backgroundPosition: `${-col * 128}px ${-row * 128}px`,
       });
     }
 
-    // Revolver las piezas
     const shuffled = [...newPieces];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -39,7 +37,6 @@ export default function RompecabezasPage() {
       shuffled[j].currentPosition = temp;
     }
 
-    // Ordenar por posición actual para el renderizado
     shuffled.sort((a, b) => a.currentPosition - b.currentPosition);
 
     setPieces(shuffled);
@@ -81,13 +78,10 @@ export default function RompecabezasPage() {
 
   const handleClick = (piece: PuzzlePiece) => {
     if (selectedPiece === null) {
-      // Seleccionar la primera pieza
       setSelectedPiece(piece);
     } else if (selectedPiece.id === piece.id) {
-      // Deseleccionar si se hace clic en la misma pieza
       setSelectedPiece(null);
     } else {
-      // Intercambiar posiciones entre la pieza seleccionada y la nueva pieza
       setPieces((prev) =>
         prev.map((p) => {
           if (p.id === selectedPiece.id) {
@@ -105,21 +99,18 @@ export default function RompecabezasPage() {
   };
 
   return (
-    <div
-      className="min-h-screen p-6 relative"
-      style={{ backgroundColor: "#F9F4E1" }}
-    >
-      {/* Patrón de fondo sutil */}
+    <div className="min-h-screen p-6 relative" style={{ backgroundColor: "#F9F4E1" }}>
       <div
         className="absolute inset-0 opacity-5"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23001E33' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundImage:
+            "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23001E33' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
         }}
       ></div>
 
-      <div className="text-center mb-4">
+      <div className="relative z-10">
         <h1
-          className="text-5xl font-bold mb-3"
+          className="text-5xl font-bold mb-3 text-center"
           style={{
             color: "#001E33",
             fontFamily: "serif",
@@ -128,10 +119,7 @@ export default function RompecabezasPage() {
         >
           🧩 Juego Rompecabezas
         </h1>
-        <div
-          className="w-24 h-1 mx-auto mb-4"
-          style={{ backgroundColor: "#866D4E" }}
-        ></div>
+        <div className="w-24 h-1 mx-auto mb-4" style={{ backgroundColor: "#866D4E" }}></div>
         <div className="text-center mb-6">
           <p className="text-lg mb-2 font-medium" style={{ color: "#866D4E" }}>
             Movimientos:{" "}
@@ -157,10 +145,7 @@ export default function RompecabezasPage() {
 
         {won && (
           <div className="text-center mb-6">
-            <h2
-              className="text-3xl font-bold mb-4"
-              style={{ color: "#56915D" }}
-            >
+            <h2 className="text-3xl font-bold mb-4" style={{ color: "#56915D" }}>
               🎉 ¡Completaste el rompecabezas! 🎉
             </h2>
             <button
@@ -178,12 +163,8 @@ export default function RompecabezasPage() {
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            {/* Imagen de referencia */}
             <div className="text-center">
-              <h3
-                className="text-xl font-bold mb-4"
-                style={{ color: "#001E33" }}
-              >
+              <h3 className="text-xl font-bold mb-4" style={{ color: "#001E33" }}>
                 📸 Imagen de referencia
               </h3>
               <div
@@ -196,17 +177,13 @@ export default function RompecabezasPage() {
                 <img
                   src={currentImage.imagen}
                   alt={currentImage.alt}
-                  className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-lg"
+                  className="w-96 h-96 object-cover rounded-lg"
                 />
               </div>
             </div>
 
-            {/* Tablero del rompecabezas */}
             <div className="text-center">
-              <h3
-                className="text-xl font-bold mb-4"
-                style={{ color: "#001E33" }}
-              >
+              <h3 className="text-xl font-bold mb-4" style={{ color: "#001E33" }}>
                 🧩 Toca las piezas
               </h3>
               <div
@@ -216,17 +193,17 @@ export default function RompecabezasPage() {
                   border: `2px solid #866D4E`,
                 }}
               >
-                <div className="grid grid-cols-3 gap-1 w-48 h-48 sm:w-64 sm:h-64">
+                <div className="grid grid-cols-3 gap-1 w-[384px] h-[384px]">
                   {pieces
                     .sort((a, b) => a.currentPosition - b.currentPosition)
                     .map((piece) => (
                       <div
                         key={piece.id}
                         onClick={() => handleClick(piece)}
-                        className="w-14 h-14 sm:w-20 sm:h-20 cursor-pointer border-2 transition-all duration-200 touch-manipulation"
+                        className="w-32 h-32 cursor-pointer border-2 transition-all duration-200 touch-manipulation"
                         style={{
                           backgroundImage: `url(${currentImage.imagen})`,
-                          backgroundSize: "192px 192px",
+                          backgroundSize: "384px 384px",
                           backgroundPosition: piece.backgroundPosition,
                           backgroundRepeat: "no-repeat",
                           borderColor:
@@ -235,12 +212,9 @@ export default function RompecabezasPage() {
                               : piece.correctPosition === piece.currentPosition
                               ? "#56915D"
                               : "#866D4E",
-                          borderWidth:
-                            selectedPiece?.id === piece.id ? "3px" : "2px",
+                          borderWidth: selectedPiece?.id === piece.id ? "3px" : "5px",
                           transform:
-                            selectedPiece?.id === piece.id
-                              ? "scale(1.05)"
-                              : "scale(1)",
+                            selectedPiece?.id === piece.id ? "scale(1.05)" : "scale(1)",
                           boxShadow:
                             selectedPiece?.id === piece.id
                               ? "0 4px 12px rgba(0,30,51,0.3)"
@@ -259,15 +233,10 @@ export default function RompecabezasPage() {
             </div>
           </div>
 
-          {/* Instrucciones */}
           <div className="text-center mt-8">
-            <p
-              className="text-sm max-w-md mx-auto"
-              style={{ color: "#866D4E" }}
-            >
-              Toca una pieza para seleccionarla, luego toca otra para
-              intercambiarlas. Las piezas en la posición correcta se mostrarán
-              con borde verde.
+            <p className="text-sm max-w-md mx-auto" style={{ color: "#866D4E" }}>
+              Toca una pieza para seleccionarla, luego toca otra para intercambiarlas. Las piezas en
+              la posición correcta se mostrarán con borde verde.
             </p>
             {selectedPiece && (
               <p className="font-medium mt-2" style={{ color: "#001E33" }}>
