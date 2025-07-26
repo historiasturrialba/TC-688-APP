@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import items from "./datos-juegos/datos-juego-memoria-rompecabezas.json";
+import items from "../../data/datos-juego-memoria-rompecabezas.json";
 
 type PuzzlePiece = {
   id: number;
