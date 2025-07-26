@@ -26,22 +26,76 @@ export default function LeyendasSection() {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="w-full bg-[#f0f9ff] py-12 px-4 flex justify-center">
-      <div className="max-w-4xl w-full">
-        <h2 className="text-3xl font-bold text-center text-purple-800 mb-8">
-          👻 Leyendas Populares
-        </h2>
+    <div className="w-full py-12 px-4 flex justify-center relative" style={{ backgroundColor: '#F9F4E1' }}>
+      {/* Patrón de fondo sutil */}
+      <div className="absolute inset-0 opacity-5" 
+           style={{ 
+             backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23001E33' fill-opacity='0.06'%3E%3Cpath d='M0 0h50v50H0V0zm50 50h50v50H50V50z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` 
+           }}>
+      </div>
+
+      <div className="max-w-4xl w-full relative z-10">
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4" 
+              style={{ 
+                color: '#001E33',
+                fontFamily: 'serif'
+              }}>
+            👻 Leyendas Populares
+          </h2>
+          <div className="w-24 h-1 mx-auto mb-4" style={{ backgroundColor: '#866D4E' }}></div>
+          <p className="text-lg" style={{ color: '#866D4E' }}>
+            Relatos misteriosos que han perdurado en el tiempo
+          </p>
+        </div>
         
+        {/* Cards de leyendas */}
         <div className="space-y-6 mb-8">
           {currentItems.map((leyenda) => (
             <div
               key={leyenda.id}
-              className="bg-white shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg p-6"
+              className="shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl p-6 hover:scale-[1.01] transform relative overflow-hidden"
+              style={{ 
+                backgroundColor: '#F9F4E1',
+                border: `2px solid #866D4E`
+              }}
             >
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {leyenda.titulo}
-              </h3>
-              <p className="text-gray-700">{leyenda.descripcion}</p>
+              {/* Elemento decorativo lateral */}
+              <div 
+                className="absolute left-0 top-0 h-full w-1"
+                style={{ backgroundColor: '#56915D' }}
+              ></div>
+
+              {/* Contenido */}
+              <div className="ml-4">
+                {/* Título */}
+                <h3 className="text-xl font-bold mb-3 flex items-center" style={{ color: '#001E33' }}>
+                  <span className="mr-3 text-2xl">📖</span>
+                  {leyenda.titulo}
+                </h3>
+
+                {/* Descripción */}
+                <div className="prose prose-sm max-w-none">
+                  <p className="text-base leading-relaxed" style={{ color: '#001E33' }}>
+                    {leyenda.descripcion}
+                  </p>
+                </div>
+              </div>
+
+              {/* Decoración inferior */}
+              <div className="mt-4 pt-3 border-t flex justify-end items-center" 
+                   style={{ borderColor: '#866D4E' }}>
+                <div className="flex items-center">
+                  <span className="text-xs font-medium mr-2" style={{ color: '#866D4E' }}>
+                    Leyenda tradicional
+                  </span>
+                  <div className="w-6 h-6 rounded-full flex items-center justify-center" 
+                       style={{ backgroundColor: '#866D4E' }}>
+                    <span className="text-xs" style={{ color: '#F9F4E1' }}>✨</span>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
@@ -51,7 +105,15 @@ export default function LeyendasSection() {
           <button
             onClick={() => paginate(currentPage - 1)}
             disabled={currentPage === 1}
-            className={`px-4 py-2 rounded-md ${currentPage === 1 ? 'bg-gray-200 cursor-not-allowed' : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+            className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              currentPage === 1 
+                ? 'cursor-not-allowed opacity-50' 
+                : 'hover:scale-105 shadow-md hover:shadow-lg'
+            }`}
+            style={{
+              backgroundColor: currentPage === 1 ? '#866D4E' : '#001E33',
+              color: '#F9F4E1'
+            }}
           >
             Anterior
           </button>
@@ -60,7 +122,11 @@ export default function LeyendasSection() {
             <button
               key={number}
               onClick={() => paginate(number)}
-              className={`px-4 py-2 rounded-md ${currentPage === number ? 'bg-gray-200 cursor-not-allowed' : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+              className="px-4 py-2 rounded-lg font-medium transition-all duration-200 hover:scale-105 shadow-md hover:shadow-lg"
+              style={{
+                backgroundColor: currentPage === number ? '#56915D' : '#866D4E',
+                color: '#F9F4E1'
+              }}
             >
               {number}
             </button>
@@ -69,10 +135,25 @@ export default function LeyendasSection() {
           <button
             onClick={() => paginate(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className={`px-4 py-2 rounded-md ${currentPage === totalPages ? 'bg-gray-200 cursor-not-allowed' : 'bg-blue-500 text-white hover:bg-blue-600'}`}
+            className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+              currentPage === totalPages 
+                ? 'cursor-not-allowed opacity-50' 
+                : 'hover:scale-105 shadow-md hover:shadow-lg'
+            }`}
+            style={{
+              backgroundColor: currentPage === totalPages ? '#866D4E' : '#001E33',
+              color: '#F9F4E1'
+            }}
           >
             Siguiente
           </button>
+        </div>
+
+        {/* Elemento decorativo inferior */}
+        <div className="text-center mt-12 pt-8 border-t-2" style={{ borderColor: '#866D4E' }}>
+          <p className="text-sm italic" style={{ color: '#866D4E' }}>
+            "Las leyendas son el alma de los pueblos, contadas de generación en generación"
+          </p>
         </div>
       </div>
     </div>
