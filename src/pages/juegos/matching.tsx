@@ -161,122 +161,207 @@ export default function MatchingPage() {
     item === firstChoice || item === secondChoice;
 
   return (
-    <div className="min-h-screen p-6 bg-gradient-to-b from-yellow-100 via-blue-50 to-green-100 relative">
-      <h1 className="text-4xl font-bold text-center mb-4 text-blue-700">
-        🎯 Juego de Matching
-      </h1>
-      <p className="text-center text-lg mb-2 text-gray-700 font-medium">
-        Asocia cada imagen con su nombre correspondiente
-      </p>
-      <p className="text-center text-lg mb-6 text-gray-700 font-medium">
-        Puntos: <span className="font-bold text-green-600">{score}</span>
-      </p>
+    <div
+      className="min-h-screen p-6 relative"
+      style={{ backgroundColor: "#F9F4E1" }}
+    >
+      {/* Patrón de fondo sutil */}
+      <div
+        className="absolute inset-0 opacity-5"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23001E33' fill-opacity='0.08'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }}
+      ></div>
 
-      {won && (
-        <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold text-green-700 mb-4">
-            🎉 ¡Excelente! 🎉
-          </h2>
-          <p className="text-lg text-gray-700 mb-4">
-            ¡Has asociado todas las imágenes correctamente!
+      <div className="relative z-10 max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-4">
+          <h1
+            className="text-5xl font-bold mb-3"
+            style={{
+              color: "#001E33",
+              fontFamily: "serif",
+              textShadow: "2px 2px 4px rgba(0,30,51,0.1)",
+            }}
+          >
+            🎯 Juego de Matching
+          </h1>
+          <div className="w-24 h-1 mx-auto mb-4" style={{ backgroundColor: '#866D4E' }}></div>
+          <p className="text-lg mb-2" style={{ color: "#866D4E" }}>
+            Asocia cada imagen con su nombre correspondiente
           </p>
-          <button
-            onClick={shuffleItems}
-            className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full text-lg shadow transition"
+        </div>
+
+        {/* Score */}
+        <div className="text-center mb-6">
+          <p className="text-lg font-medium" style={{ color: "#866D4E" }}>
+            Puntos:{" "}
+            <span className="font-bold" style={{ color: "#56915D" }}>
+              {score}
+            </span>
+          </p>
+        </div>
+
+        {/* Win Message */}
+        {won && (
+          <div className="text-center mb-6">
+            <h2
+              className="text-3xl font-bold mb-4"
+              style={{ color: "#56915D" }}
+            >
+              🎉 ¡Excelente! 🎉
+            </h2>
+            <p className="text-lg mb-4" style={{ color: "#866D4E" }}>
+              ¡Has asociado todas las imágenes correctamente!
+            </p>
+            <button
+              onClick={shuffleItems}
+              className="px-5 py-3 rounded-full text-lg shadow transition hover:scale-105"
+              style={{
+                backgroundColor: "#001E33",
+                color: "#F9F4E1",
+              }}
+            >
+              Jugar de nuevo
+            </button>
+          </div>
+        )}
+
+        {/* Game Instructions */}
+        {!won && (
+          <div className="text-center mb-6">
+            <p className="text-base" style={{ color: "#866D4E" }}>
+              Haz clic en una imagen y luego en su nombre correspondiente
+            </p>
+          </div>
+        )}
+
+        {/* Contenedor principal del juego */}
+        <div ref={containerRef} className="relative max-w-4xl mx-auto">
+          {/* SVG para las líneas de conexión */}
+          <svg
+            className="absolute inset-0 w-full h-full pointer-events-none z-10"
+            style={{ minHeight: "500px" }}
           >
-            Jugar de nuevo
-          </button>
-        </div>
-      )}
-
-      {/* Contenedor principal del juego */}
-      <div ref={containerRef} className="relative max-w-4xl mx-auto">
-        {/* SVG para las líneas de conexión */}
-        <svg
-          className="absolute inset-0 w-full h-full pointer-events-none z-10"
-          style={{ minHeight: "500px" }}
-        >
-          {connections.map((connection, index) => (
-            <line
-              key={index}
-              x1={connection.from.x}
-              y1={connection.from.y}
-              x2={connection.to.x}
-              y2={connection.to.y}
-              stroke="#10B981"
-              strokeWidth="4"
-              strokeDasharray="5,5"
-              className="animate-pulse"
-            />
-          ))}
-        </svg>
-
-        {/* Grid de dos columnas */}
-        <div className="flex justify-between gap-8">
-          {/* Columna izquierda - Imágenes */}
-          <div className="space-y-4 w-72">
-            <h3 className="text-xl font-bold text-blue-700 mb-4">
-              🖼️ Imágenes
-            </h3>
-            {imageItems.map((item, i) => (
-              <div
-                key={i}
-                data-item-id={item.id}
-                onClick={() => handleChoice(item)}
-                className={`rounded-xl shadow-md p-4 cursor-pointer transition-all duration-200 ${
-                  item.matched
-                    ? "bg-green-100 border-4 border-green-500"
-                    : isSelected(item)
-                    ? "bg-blue-100 border-4 border-blue-500 scale-105"
-                    : "bg-white border border-gray-300 hover:scale-105 hover:shadow-lg"
-                }`}
-              >
-                <img
-                  src={item.content}
-                  alt={item.alt}
-                  className="w-full h-24 object-contain"
-                />
-              </div>
+            {connections.map((connection, index) => (
+              <line
+                key={index}
+                x1={connection.from.x}
+                y1={connection.from.y}
+                x2={connection.to.x}
+                y2={connection.to.y}
+                stroke="#56915D"
+                strokeWidth="4"
+                strokeDasharray="5,5"
+                className="animate-pulse"
+              />
             ))}
-          </div>
+          </svg>
 
-          {/* Columna derecha - Nombres */}
-          <div className="space-y-4 w-32">
-            <h3 className="text-xl font-bold text-center text-blue-700 mb-4">
-              📝 Nombres
-            </h3>
-            {nameItems.map((item, i) => (
-              <div
-                key={i}
-                data-item-id={item.id}
-                onClick={() => handleChoice(item)}
-                className={`rounded-xl shadow-md p-4 cursor-pointer transition-all duration-200 flex items-center justify-center h-32 ${
-                  item.matched
-                    ? "bg-green-100 border-4 border-green-500"
-                    : isSelected(item)
-                    ? "bg-blue-100 border-4 border-blue-500 scale-105"
-                    : "bg-white border border-gray-300 hover:scale-105 hover:shadow-lg"
-                }`}
+          {/* Grid de dos columnas */}
+          <div className="flex justify-between gap-8">
+            {/* Columna izquierda - Imágenes */}
+            <div className="space-y-4 w-72">
+              <h3
+                className="text-xl font-bold mb-4"
+                style={{ color: "#001E33" }}
               >
-                <span className="text-xl font-semibold text-gray-800">
-                  {item.content}
-                </span>
-              </div>
-            ))}
+                🖼️ Imágenes
+              </h3>
+              {imageItems.map((item, i) => (
+                <div
+                  key={i}
+                  data-item-id={item.id}
+                  onClick={() => handleChoice(item)}
+                  className="rounded-xl shadow-md p-4 cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                  style={{
+                    backgroundColor: item.matched
+                      ? "#56915D"
+                      : isSelected(item)
+                      ? "#866D4E"
+                      : "#F9F4E1",
+                    border: `4px solid ${
+                      item.matched
+                        ? "#001E33"
+                        : isSelected(item)
+                        ? "#001E33"
+                        : "#866D4E"
+                    }`,
+                  }}
+                >
+                  <img
+                    src={item.content}
+                    alt={item.alt}
+                    className="w-full h-24 object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Columna derecha - Nombres */}
+            <div className="space-y-4 w-32">
+              <h3
+                className="text-xl font-bold text-center mb-4"
+                style={{ color: "#001E33" }}
+              >
+                📝 Nombres
+              </h3>
+              {nameItems.map((item, i) => (
+                <div
+                  key={i}
+                  data-item-id={item.id}
+                  onClick={() => handleChoice(item)}
+                  className="rounded-xl shadow-md p-4 cursor-pointer transition-all duration-200 flex items-center justify-center h-32 hover:scale-105 hover:shadow-lg"
+                  style={{
+                    backgroundColor: item.matched
+                      ? "#56915D"
+                      : isSelected(item)
+                      ? "#866D4E"
+                      : "#F9F4E1",
+                    border: `4px solid ${
+                      item.matched
+                        ? "#001E33"
+                        : isSelected(item)
+                        ? "#001E33"
+                        : "#866D4E"
+                    }`,
+                  }}
+                >
+                  <span
+                    className="text-xl font-semibold"
+                    style={{
+                      color:
+                        item.matched || isSelected(item)
+                          ? "#F9F4E1"
+                          : "#001E33",
+                    }}
+                  >
+                    {item.content}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
+
+        {/* Reset button */}
+        {!won && (
+          <div className="text-center mt-8">
+            <button
+              onClick={shuffleItems}
+              className="px-4 py-2 rounded-full text-sm shadow transition hover:scale-105"
+              style={{
+                backgroundColor: "#866D4E",
+                color: "#F9F4E1",
+              }}
+            >
+              Reiniciar juego
+            </button>
+          </div>
+        )}
+
+        {/* Footer decorativo - removido para mantener simplicidad */}
       </div>
-
-      {!won && (
-        <div className="text-center mt-8">
-          <button
-            onClick={shuffleItems}
-            className="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-full text-sm shadow transition"
-          >
-            Reiniciar juego
-          </button>
-        </div>
-      )}
     </div>
   );
 }
