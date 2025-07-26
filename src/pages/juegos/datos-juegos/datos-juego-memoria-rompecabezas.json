@@ -16,12 +16,12 @@
   },
   {
     "id": 4,
-    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Junta Directiva.webp",
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Junta-Directiva.webp",
     "alt": "Junta Directiva"
   },
   {
     "id": 5,
-    "imagen": "/juegos/assets/juego-memoria-rompecabezas/La comandancia.webp",
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/La-Comandancia.webp",
     "alt": "La comandancia"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "id": 8,
-    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Objetos antiguos.webp",
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Objetos-Antiguos.webp",
     "alt": "Objetos antiguos"
   },
   {
@@ -66,12 +66,37 @@
   },
   {
     "id": 14,
-    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Salon Comunal.webp",
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Salon-Comunal.webp",
     "alt": "Salon Comunal"
   },
   {
     "id": 15,
     "imagen": "/juegos/assets/juego-memoria-rompecabezas/Tonfa.webp",
     "alt": "Tonfa"
+  },
+  {
+    "id": 16,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/La-Custodia.webp",
+    "alt": "La Custodia"
+  },
+  {
+    "id": 17,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Equipo-de-futbol.webp",
+    "alt": "Equipo de futbol"
+  },
+  {
+    "id": 18,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Cancha-de-basket.webp",
+    "alt": "Cancha de basket"
+  },
+  {
+    "id": 19,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Telefono-Antiguo.webp",
+    "alt": "Telefono Antiguo"
+  },
+  {
+    "id": 20,
+    "imagen": "/juegos/assets/juego-memoria-rompecabezas/Tocadiscos.webp",
+    "alt": "Tocadiscos"
   }
 ]
