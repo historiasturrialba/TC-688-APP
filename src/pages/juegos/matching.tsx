@@ -216,6 +216,15 @@ export default function MatchingPage() {
             >
               🎉 ¡Excelente! 🎉
             </h2>
+            <div className="mt-4">
+              <img
+                src="/personajes/la-queso-porte.png"
+                alt="Canita"
+                width={180}
+                height={180}
+                className="mx-auto"
+              />
+            </div>
             <p className="text-lg mb-4" style={{ color: "#866D4E" }}>
               ¡Has asociado todas las imágenes correctamente!
             </p>
