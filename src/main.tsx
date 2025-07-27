@@ -11,7 +11,7 @@ import GaleriaPage from "./pages/galeria/galeria";
 // Historia
 import SabiasQuePage from "./pages/historia/sabias-que";
 import AnecdotasPage from "./pages/historia/anecdotas";
-import ChistesPage from "./pages/historia/chistes";
+import PersonajesPage from "./pages/historia/personajes";
 import LeyendasPage from "./pages/historia/leyendas";
 import OrigenDePage from "./pages/historia/origen-de";
 
@@ -36,7 +36,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="historia" element={<HistoriaPage />} />
           <Route path="historia/sabias-que" element={<SabiasQuePage />} />
           <Route path="historia/anecdotas" element={<AnecdotasPage />} />
-          <Route path="historia/chistes" element={<ChistesPage />} />
+          <Route path="historia/personajes" element={<PersonajesPage />} />
           <Route path="historia/leyendas" element={<LeyendasPage />} />
           <Route path="historia/origen-de" element={<OrigenDePage />} />
 
