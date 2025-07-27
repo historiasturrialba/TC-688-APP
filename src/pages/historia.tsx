@@ -11,8 +11,8 @@ export default function HistoriaPage() {
       imagen: "/historia/anecdotas.png",
     },
     {
-      titulo: "Chistes",
-      url: "/historia/chistes",
+      titulo: "Personajes importantes",
+      url: "/historia/personajes",
       imagen: "/historia/chistes.png",
     },
     {
