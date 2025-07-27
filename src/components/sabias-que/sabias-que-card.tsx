@@ -1,26 +1,22 @@
 interface SabiasQueCardProps {
-    data: {
-      id: number;
-      titulo: string;
-      descripcion: string;
-      imagen: string;
-      categoria: string;
-    };
-  }
-  
-  export default function SabiasQueCard({ data }: SabiasQueCardProps) {
-    return (
-      <div className="border rounded shadow p-4 flex flex-col">
-        <img
-          src={data.imagen}
-          alt={data.titulo}
-          className="h-40 object-cover rounded mb-4"
-        />
-        <span className="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded self-start mb-2">
+  data: {
+    id: number;
+    titulo: string;
+    descripcion: string;
+    categoria: string;
+  };
+}
+
+export default function SabiasQueCard({ data }: SabiasQueCardProps) {
+  return (
+    <article className="bg-white/80 backdrop-blur-sm rounded-xl shadow-md p-6 flex flex-col hover:scale-[1.03] hover:shadow-lg transition-transform">
+      <div className="flex items-center mb-3 space-x-3">
+        <span className="inline-block px-3 py-1 rounded-full bg-[#B06C44] text-white font-semibold text-sm tracking-wide">
           {data.categoria}
         </span>
-        <p className="text-gray-800">{data.descripcion}</p>
       </div>
-    );
-  }
-  
+      <h3 className="text-[#001E33] font-serif text-xl mb-2">{data.titulo}</h3>
+      <p className="text-[#86704E] text-base leading-relaxed">{data.descripcion}</p>
+    </article>
+  );
+}
