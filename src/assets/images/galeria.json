@@ -1,0 +1,154 @@
+  {
+    "categories": [
+      {
+        "id": 1,
+        "title": "Comunidad/Calle",
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/comunidad1.webp",
+            "title": "Comunidad 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/comunidad2.webp",
+            "title": "Comunidad 2"
+          },
+          {
+            "id": 3,
+            "url": "/galeria/comunidad3.webp",
+            "title": "Comunidad 3"
+          },
+          {
+            "id": 4,
+            "url": "/galeria/comunidad4.webp",
+            "title": "Comunidad 4"
+          },
+          {
+            "id": 5,
+            "url": "/galeria/comunidad5.webp",
+            "title": "Comunidad 5"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Construcción",
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/construccion1.webp",
+            "title": "Construcción 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/construccion2.webp",
+            "title": "Construcción 2"
+          },
+          {
+            "id": 3,
+            "url": "/galeria/construccion3.webp",
+            "title": "Construcción 3"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Deporte",
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/deporte1.webp",
+            "title": "Deporte 1"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Infraestructura",
+        "images": []
+      },
+      {
+        "id": 6,
+        "title": "Artesanias",
+        "images": []
+      },
+      {
+        "id": 7,
+        "title": "Actividades de la comunidad",
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/actividadComunidad1.webp",
+            "title": "Actividad comunidad 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/actividadComunidad2.webp",
+            "title": "Actividad comunidad 2"
+          },
+          {
+            "id": 3,
+            "url": "/galeria/actividadComunidad3.webp",
+            "title": "Actividad comunidad 3"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Familias",
+        "images": []
+      },
+      {
+        "id": 9,
+        "title": "Objetos antiguos",
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/objetoIndigena1.webp",
+            "title": "Objeto indigena 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/objetoIndigena2.webp",
+            "title": "Objeto indigena 2"
+          },
+          {
+            "id": 3,
+            "url": "/galeria/objetoIndigena3.webp",
+            "title": "Objeto indigena 3"
+          },
+          {
+            "id": 4,
+            "url": "/galeria/objetoIndigena4.webp",
+            "title": "Objeto indigena 4"
+          },
+          {
+            "id": 5,
+            "url": "/galeria/objetoIndigena5.webp",
+            "title": "Objeto indigena 5"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Recreacion",
+        "images": []
+      },
+      {
+        "id": 11,
+        "title": "Religion",
+        "images": []
+      },
+      {
+        "id": 13,
+        "title": "Terrenos",
+        "images": []
+      },
+      {
+        "id": 14,
+        "title": "Trabajo y locales",
+        "images": []
+      }
+    ]
+  }

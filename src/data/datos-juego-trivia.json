@@ -1,0 +1,142 @@
+[
+  {
+    "question": "¿A qué se debe el nombre de la comunidad La Isabel?",
+    "options": [
+      "En honor a la Ermita Santa Isabel",
+      "A la dueña de una finca",
+      "La alcaldesa del momento"
+    ],
+    "answer": "En honor a la Ermita Santa Isabel",
+    "explanation": "La comunidad recibe su nombre en honor a la Ermita Santa Isabel, un punto de referencia histórico."
+  },
+  {
+    "question": "¿Existió algún lugar representativo que ya no esté?",
+    "options": [
+      "Un bar",
+      "La plaza",
+      "Una cafetería"
+    ],
+    "answer": "La plaza",
+    "explanation": "La plaza era el lugar principal de reunión y actividades, pero ya no existe."
+  },
+  {
+    "question": "¿Cuáles fueron las primeras actividades agrícolas de la zona?",
+    "options": [
+      "Ganadería",
+      "Minería",
+      "café y caña de azúcar"
+    ],
+    "answer": "café y caña de azúcar",
+    "explanation": "El café y la caña de azúcar fueron los cultivos más importantes en los inicios de la comunidad."
+  },
+  {
+    "question": "¿Alguna vez hubo un beneficio de café, trapiche, aserradero, ingenio o alguna otra empresa agrícola?",
+    "options": [
+      "Un beneficio de café",
+      "Aserradero",
+      "Un tajo"
+    ],
+    "answer": "Un beneficio de café",
+    "explanation": "Existió un beneficio de café que impulsó la economía local."
+  },
+  {
+    "question": "¿Para qué utilizaban antes los terrenos que ahora son las casas?",
+    "options": [
+      "Fincas ganadera",
+      "Eran cafetales",
+      "Era una hacienda"
+    ],
+    "answer": "Eran cafetales",
+    "explanation": "Antes de la urbanización, los terrenos eran principalmente cafetales."
+  },
+  {
+    "question": "¿Cómo celebraban las fiestas patronales?",
+    "options": [
+      "Con un baile",
+      "Con un partido de fútbol",
+      "Carreras de cintas y ferias"
+    ],
+    "answer": "Carreras de cintas y ferias",
+    "explanation": "Las fiestas patronales se celebraban con carreras de cintas y ferias tradicionales."
+  },
+  {
+    "question": "¿Cuál era el grupo religioso con más afluencia?",
+    "options": [
+      "religión católica",
+      "Evangélicos",
+      "Adventistas"
+    ],
+    "answer": "religión católica",
+    "explanation": "La religión católica era la más practicada en la comunidad."
+  },
+  {
+    "question": "¿Cuál es el deporte que más se ha practicado y cuál es el que se está empezando a practicar más regularmente?",
+    "options": [
+      "Fútbol y béisbol",
+      "Fútbol y básquetbol",
+      "Básquetbol y fútbol"
+    ],
+    "answer": "Fútbol y básquetbol",
+    "explanation": "El fútbol ha sido tradicionalmente el deporte principal, pero el básquetbol está ganando popularidad."
+  },
+  {
+    "question": "¿Cuál era el lugar en donde más solían socializar?",
+    "options": [
+      "En las afueras de la pulpería",
+      "En la iglesia",
+      "La plaza"
+    ],
+    "answer": "La plaza",
+    "explanation": "La plaza era el centro social de la comunidad."
+  },
+  {
+    "question": "¿Cuáles eran las principales fuentes de trabajo?",
+    "options": [
+      "Agricultura (café y caña)",
+      "En los supermercados",
+      "En las cantinas"
+    ],
+    "answer": "Agricultura (café y caña)",
+    "explanation": "La agricultura, especialmente el café y la caña, era la principal fuente de empleo."
+  },
+  {
+    "question": "¿Cuál es el segundo apellido del Dr. Valeriano Fernández….?",
+    "options": [
+      "Hernández",
+      "Ferraz",
+      "Bonilla"
+    ],
+    "answer": "Ferraz",
+    "explanation": "El segundo apellido del Dr. Valeriano Fernández es Ferraz."
+  },
+  {
+    "question": "¿Cuál institución está involucrada en el desarrollo de la comunidad?",
+    "options": [
+      "Los bomberos",
+      "La delegación de policía",
+      "La escuela y la asociación de desarrollo"
+    ],
+    "answer": "La escuela y la asociación de desarrollo",
+    "explanation": "La escuela y la asociación de desarrollo han sido claves en el progreso de la comunidad."
+  },
+  {
+    "question": "¿Quién fue el Dr. Valeriano Fernández?",
+    "options": [
+      "Un doctor",
+      "Un educador",
+      "Un sacerdote"
+    ],
+    "answer": "Un educador",
+    "explanation": "El Dr. Valeriano Fernández fue un destacado educador en la zona."
+  },
+  {
+    "question": "¿En qué fecha se fundó la escuela Dr. Valeriano Fernández Ferraz?",
+    "options": [
+      "7 de julio 1925",
+      "1 de enero 1950",
+      "15 de septiembre 1945"
+    ],
+    "answer": "7 de julio 1925",
+    "explanation": "La escuela fue fundada el 7 de julio de 1925."
+  }
+]
