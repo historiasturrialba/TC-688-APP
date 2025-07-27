@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export type Direction = "horizontal" | "vertical" | "diagonal";
 
@@ -11,6 +11,8 @@ export interface Cell {
 
 export default function useWordSearchGenerator() {
   const size = 12;
+  const maxWords = 11;
+
   const [board, setBoard] = useState<Cell[][]>([]);
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [wordPositions, setWordPositions] = useState<Record<string, [number, number][]>>({});
@@ -27,34 +29,36 @@ export default function useWordSearchGenerator() {
     if (direction === "horizontal") {
       if (col + word.length > size) return false;
       for (let i = 0; i < word.length; i++) {
-        if (board[row][col + i].letter && board[row][col + i].letter !== word[i])
-          return false;
+        const cell = board[row][col + i];
+        if (cell.letter && cell.letter !== word[i]) return false;
       }
     } else if (direction === "vertical") {
       if (row + word.length > size) return false;
       for (let i = 0; i < word.length; i++) {
-        if (board[row + i][col].letter && board[row + i][col].letter !== word[i])
-          return false;
+        const cell = board[row + i][col];
+        if (cell.letter && cell.letter !== word[i]) return false;
       }
     } else if (direction === "diagonal") {
       if (row + word.length > size || col + word.length > size) return false;
       for (let i = 0; i < word.length; i++) {
-        if (
-          board[row + i][col + i].letter &&
-          board[row + i][col + i].letter !== word[i]
-        )
-          return false;
+        const cell = board[row + i][col + i];
+        if (cell.letter && cell.letter !== word[i]) return false;
       }
     }
     return true;
   };
 
-  const generateBoard = (wordsToUse: string[]) => {
+  const generateBoard = (inputWords: string[]) => {
+    const selectedWords = [...inputWords]
+      .filter((w) => w.length <= size)
+      .slice(0, maxWords);
+
     let attempts = 0;
     let placedAll = false;
 
     while (!placedAll && attempts < 10) {
       attempts++;
+
       const emptyBoard: Cell[][] = Array(size)
         .fill(null)
         .map(() =>
@@ -101,6 +105,7 @@ export default function useWordSearchGenerator() {
               emptyBoard[r][c].partOfWord = true;
               positions.push([r, c]);
             }
+
             positionsMap[word] = positions;
             placed = true;
           }
@@ -109,7 +114,7 @@ export default function useWordSearchGenerator() {
         if (!placed) placedAll = false;
       };
 
-      wordsToUse.forEach((word) => placeWord(word));
+      selectedWords.forEach((word) => placeWord(word));
 
       if (placedAll) {
         const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -125,7 +130,7 @@ export default function useWordSearchGenerator() {
         setBoard(emptyBoard);
         setWordPositions(positionsMap);
         setFoundWords([]);
-        setCurrentWords(wordsToUse);
+        setCurrentWords(selectedWords);
       }
     }
 
@@ -177,4 +182,3 @@ export default function useWordSearchGenerator() {
   return { board, toggleCell, foundWords, generateBoard, currentWords };
 }
 
-export type { Cell };
