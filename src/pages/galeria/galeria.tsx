@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import imagesData from '../../assets/images/images.json';
+import imagesData from '../../assets/images/galeria.json';
 import { useSwipeable } from 'react-swipeable';
 
 interface Image {
@@ -61,7 +61,7 @@ const Galeria = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-center mb-2">Galería de imágenes</h1>
-      <h4 className="text-lg text-center text-gray-600 mb-6">Explora fotografías históricas y actuales</h4>
+      <h4 className="text-lg text-center text-gray-600 mb-6">Explora fotografías históricas y actuales de tu comunidad</h4>
 
       <div className="flex flex-wrap justify-center gap-2 mb-8">
         {categories.map((category) => (

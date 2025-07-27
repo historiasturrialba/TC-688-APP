@@ -82,7 +82,7 @@ export default function Home() {
             <div className="px-6">
               <div className="aspect-video relative overflow-hidden rounded-lg">
                 <img
-                  src="/galeria/galeria.png"
+                  src="/galeria/galeria.webp"
                   alt="Galería de imágenes"
                   className="absolute inset-0 w-full h-full object-cover opacity-90 rounded-lg"
                 />
