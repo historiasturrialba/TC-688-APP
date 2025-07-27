@@ -29,8 +29,13 @@ export default function MatchingPage() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const shuffleItems = () => {
+    // Seleccionar solo 5 items aleatorios del conjunto de datos
+    const selectedItems = gameData
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 5);
+
     // Crear items de imágenes (lado izquierdo)
-    const images = gameData
+    const images = selectedItems
       .map((item) => ({
         id: item.id * 2 - 1,
         type: "imagen" as const,
@@ -42,7 +47,7 @@ export default function MatchingPage() {
       .sort(() => Math.random() - 0.5);
 
     // Crear items de nombres (lado derecho)
-    const names = gameData
+    const names = selectedItems
       .map((item) => ({
         id: item.id * 2,
         type: "nombre" as const,
@@ -237,11 +242,11 @@ export default function MatchingPage() {
         )}
 
         {/* Contenedor principal del juego */}
-        <div ref={containerRef} className="relative max-w-4xl mx-auto">
+        <div ref={containerRef} className="relative max-w-5xl mx-auto">
           {/* SVG para las líneas de conexión */}
           <svg
             className="absolute inset-0 w-full h-full pointer-events-none z-10"
-            style={{ minHeight: "500px" }}
+            style={{ minHeight: "600px" }}
           >
             {connections.map((connection, index) => (
               <line
@@ -259,11 +264,11 @@ export default function MatchingPage() {
           </svg>
 
           {/* Grid de dos columnas */}
-          <div className="flex justify-between gap-8">
-            {/* Columna izquierda - Imágenes */}
-            <div className="space-y-4 w-72">
+          <div className="flex justify-between gap-12">
+            {/* Columna izquierda - Imágenes (más grande) */}
+            <div className="space-y-5 w-80">
               <h3
-                className="text-xl font-bold mb-4"
+                className="text-xl font-bold mb-6 text-center"
                 style={{ color: "#001E33" }}
               >
                 🖼️ Imágenes
@@ -273,7 +278,7 @@ export default function MatchingPage() {
                   key={i}
                   data-item-id={item.id}
                   onClick={() => handleChoice(item)}
-                  className="rounded-xl shadow-md p-4 cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                  className="rounded-xl shadow-md p-5 cursor-pointer transition-all duration-200 hover:scale-105 hover:shadow-lg"
                   style={{
                     backgroundColor: item.matched
                       ? "#56915D"
@@ -292,16 +297,16 @@ export default function MatchingPage() {
                   <img
                     src={item.content}
                     alt={item.alt}
-                    className="w-full h-24 object-contain"
+                    className="w-full h-32 object-contain"
                   />
                 </div>
               ))}
             </div>
 
-            {/* Columna derecha - Nombres */}
-            <div className="space-y-4 w-32">
+            {/* Columna derecha - Nombres (más espacio y mejor centrado) */}
+            <div className="space-y-5 w-48">
               <h3
-                className="text-xl font-bold text-center mb-4"
+                className="text-xl font-bold text-center mb-6"
                 style={{ color: "#001E33" }}
               >
                 📝 Nombres
@@ -311,7 +316,7 @@ export default function MatchingPage() {
                   key={i}
                   data-item-id={item.id}
                   onClick={() => handleChoice(item)}
-                  className="rounded-xl shadow-md p-4 cursor-pointer transition-all duration-200 flex items-center justify-center h-32 hover:scale-105 hover:shadow-lg"
+                  className="rounded-xl shadow-md p-6 cursor-pointer transition-all duration-200 flex items-center justify-center h-40 hover:scale-105 hover:shadow-lg"
                   style={{
                     backgroundColor: item.matched
                       ? "#56915D"
@@ -328,7 +333,7 @@ export default function MatchingPage() {
                   }}
                 >
                   <span
-                    className="text-xl font-semibold"
+                    className="text-xl font-semibold text-center leading-relaxed"
                     style={{
                       color:
                         item.matched || isSelected(item)
@@ -359,8 +364,6 @@ export default function MatchingPage() {
             </button>
           </div>
         )}
-
-        {/* Footer decorativo - removido para mantener simplicidad */}
       </div>
     </div>
   );
