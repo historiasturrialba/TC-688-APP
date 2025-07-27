@@ -1,4 +1,5 @@
 export interface HistoricalSectionType {
+  sources: string[] | undefined
   id: string
   title: string
   content: string[]
