@@ -1,12 +1,11 @@
 import { useState } from "react";
 import BackButtonGame from "../../components/origen-de/back-button-game";
 import triviaQuestions from "../../data/datos-juego-trivia.json";
+import personajes from "../../data/personajes.json";
 
-// Array de preguntas
 const allQuestions = triviaQuestions;
 
 function getRandomQuestions(arr: typeof allQuestions, n: number) {
-  // Mezcla el array y toma los primeros n elementos
   return arr
     .map(q => ({ q, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
@@ -20,12 +19,16 @@ export default function TriviaPage() {
   const [selected, setSelected] = useState<string | null>(null);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [personajeActual, setPersonajeActual] = useState(personajes[0]);
 
   const handleOption = (option: string) => {
     setSelected(option);
     if (option === questions[current].answer) {
       setScore(score + 1);
     }
+    // Selecciona un personaje aleatorio
+    const randomIndex = Math.floor(Math.random() * personajes.length);
+    setPersonajeActual(personajes[randomIndex]);
   };
 
   const handleNext = () => {
@@ -38,7 +41,7 @@ export default function TriviaPage() {
   };
 
   const handleRestart = () => {
-    setQuestions(getRandomQuestions(allQuestions, 7)); // <-- Selecciona nuevas preguntas aleatorias
+    setQuestions(getRandomQuestions(allQuestions, 7));
     setCurrent(0);
     setSelected(null);
     setScore(0);
@@ -47,20 +50,33 @@ export default function TriviaPage() {
 
   return (
     <>
-      <div className="fixed top-8 left-16 z-50">
+      <div className="fixed top-8 right-16 z-50">
         <BackButtonGame />
       </div>
-      <div className="min-h-screen flex items-center justify-center bg-blue-50">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-coconut-cream via-white to-coconut-cream/50 text-hemlock">
         <div className="rounded-xl bg-white p-8 shadow-lg w-full max-w-xl relative">
-          <h1 className="text-4xl font-bold text-center mb-6">Juego de Trivias</h1>
+          <h1 className="text-4xl font-bold text-center mb-6 text-blue-950">Juego de Trivias</h1>
           {showResult ? (
             <div className="text-center">
-              <p className="text-2xl mb-4">¡Terminaste!</p>
-              <p className="text-xl mb-6">
-                Tu puntaje: <span className="font-bold">{score}</span> de {questions.length}
+              <p className="text-2xl mb-4 text-[#866d4e]">
+                {score >= 5 ? "¡Felicidades!" : "¡Suerte en la próxima!"}
               </p>
+              <p className="text-xl mb-6 text-[#866d4e]">
+                Tu puntaje: <span className="font-bold text-[#866d4e]">{score}</span> de {questions.length}
+              </p>
+              {/* Mostrar todos los personajes */}
+              <div className="flex flex-wrap justify-center gap-4 my-6">
+                {personajes.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img}
+                    alt={`Personaje ${idx + 1}`}
+                    className="w-28 h-28 object-contain drop-shadow-lg"
+                  />
+                ))}
+              </div>
               <button
-                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
+                className="bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
                 onClick={handleRestart}
               >
                 Jugar de nuevo
@@ -69,10 +85,10 @@ export default function TriviaPage() {
           ) : (
             <>
               <div className="mb-6">
-                <p className="text-lg font-semibold mb-4">
+                <p className="text-lg font-bold mb-4 text-[#866d4e] text-center">
                   Pregunta {current + 1} de {questions.length}
                 </p>
-                <p className="text-xl mb-4">{questions[current].question}</p>
+                <p className="text-xl mb-4 text-[#866d4e] text-center">{questions[current].question}</p>
                 <div className="grid gap-3">
                   {questions[current].options.map((option) => (
                     <button
@@ -80,11 +96,11 @@ export default function TriviaPage() {
                       className={`px-4 py-2 rounded border text-left transition
                         ${selected
                           ? option === questions[current].answer
-                            ? "bg-green-200 border-green-600"
+                            ? "bg-green-200 border-green-600 text-green-700"
                             : option === selected
-                              ? "bg-red-200 border-red-600"
-                              : "bg-gray-100 border-gray-300"
-                          : "bg-gray-100 border-gray-300 hover:bg-blue-100"
+                              ? "bg-red-200 border-red-600 text-red-700"
+                              : "bg-gray-100 border-gray-300 text-[#866d4e]"
+                          : "bg-gray-100 border-gray-300 hover:bg-blue-100 text-[#866d4e]"
                         }
                       `}
                       disabled={!!selected}
@@ -97,16 +113,28 @@ export default function TriviaPage() {
               </div>
               {selected && (
                 <>
-                  <div className="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-gray-800">
-                    <p className="font-semibold mb-2">Explicación:</p>
-                    <p>{questions[current].explanation}</p>
+                  <div className="flex flex-row items-start justify-center mt-4 gap-4">
+                    <img
+                      src={personajeActual}
+                      alt="Personaje"
+                      className="w-40 h-40 object-contain mt-2 drop-shadow-lg transition-all duration-300"
+                      style={{ zIndex: 10 }}
+                    />                  
+                      <div
+                        className="p-6 border border-blue-950 rounded-2xl text-[#565b3e] text-center shadow-md min-w-[260px] max-w-[420px]"
+                        style={{ backgroundColor: "#f9f4e1" }}
+                      >
+                        <p>{questions[current].explanation}</p>
+                      </div>
+                    </div>
+                  <div className="flex justify-center">
+                    <button
+                      className="mt-6 bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800 transition"
+                      onClick={handleNext}
+                    >
+                      {current === questions.length - 1 ? "Ver resultado" : "Siguiente"}
+                    </button>
                   </div>
-                  <button
-                    className="mt-4 bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-                    onClick={handleNext}
-                  >
-                    {current === questions.length - 1 ? "Ver resultado" : "Siguiente"}
-                  </button>
                 </>
               )}
             </>

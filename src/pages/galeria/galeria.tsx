@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import imagesData from '../../assets/images/galeria.json';
+import imagesData from '../../data/datos-galeria.json';
 import { useSwipeable } from 'react-swipeable';
 
 interface Image {
@@ -59,9 +59,10 @@ const Galeria = () => {
   });
 
   return (
+    <div className="min-h-screen bg-gradient-to-br from-coconut-cream via-white to-coconut-cream/50">
     <div className="max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-center mb-2">Galería de imágenes</h1>
-      <h4 className="text-lg text-center text-gray-600 mb-6">Explora fotografías históricas y actuales de tu comunidad</h4>
+      <h1 className="text-3xl font-bold text-center mb-2 text-blue-950">Galería de imágenes</h1>
+      <h4 className="text-lg text-center text-[#866d4e] mb-6">Explora fotografías históricas de tu comunidad</h4>
 
       <div className="flex flex-wrap justify-center gap-2 mb-8">
         {categories.map((category) => (
@@ -69,8 +70,8 @@ const Galeria = () => {
             key={category.id}
             className={`px-4 py-2 rounded-full border transition ${
               selectedCategory === category.title
-                ? 'bg-blue-600 text-white border-blue-600'
-                : 'bg-white text-blue-600 border-blue-600 hover:bg-blue-50'
+                ? 'bg-blue-950 text-white border-blue-950'
+                : 'bg-white text-blue-950 border-blue-950 hover:bg-blue-50'
             }`}
             onClick={() => setSelectedCategory(category.title)}
           >
@@ -80,8 +81,8 @@ const Galeria = () => {
         <button
           className={`px-4 py-2 rounded-full border transition ${
             selectedCategory === null
-              ? 'bg-blue-600 text-white border-blue-600'
-              : 'bg-white text-blue-600 border-blue-600 hover:bg-blue-50'
+              ? 'bg-blue-950 text-white border-blue-950'
+                : 'bg-white text-blue-950 border-blue-950 hover:bg-blue-50'
           }`}
           onClick={() => setSelectedCategory(null)}
         >
@@ -111,13 +112,13 @@ const Galeria = () => {
               Imagen {currentIndex + 1} de {filteredImages.length}
             </div>
             <button
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-blue-600 text-white rounded-full p-2"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-blue-950 text-white rounded-full p-2"
               onClick={e => { e.stopPropagation(); goToPrevImage(); }}
             >
               {"<"}
             </button>
             <button
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-600 text-white rounded-full p-2"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-950 text-white rounded-full p-2"
               onClick={e => { e.stopPropagation(); goToNextImage(); }}
             >
               {">"}
@@ -131,6 +132,7 @@ const Galeria = () => {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 };

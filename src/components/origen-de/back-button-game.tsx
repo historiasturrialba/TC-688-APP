@@ -5,10 +5,10 @@ export default function BackButtonGame() {
   return (
     <Link
       href="/juegos"
-      className="inline-flex items-center text-blue-500 hover:text-blue-700 mb-6 transition-colors"
+      className="inline-flex items-center text-hemlock hover:text-midnight mb-6 transition-all duration-300 group"
     >
-      <ArrowLeft className="h-4 w-4 mr-1" />
-      Volver a Juegos
+      <ArrowLeft className="h-4 w-4 mr-2 transition-transform group-hover:-translate-x-1" />
+      <span className="font-medium">Volver a Juegos</span>
     </Link>
   )
 }

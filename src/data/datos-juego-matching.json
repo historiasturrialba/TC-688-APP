@@ -1,8 +1,15 @@
 [
-  { "id": 1, "imagen": "/juegos/assets/matching/iglesia.png", "nombre": "Iglesia", "alt": "Iglesia" },
-  { "id": 2, "imagen": "/juegos/assets/matching/plaza.png", "nombre": "Plaza", "alt": "Plaza" },
-  { "id": 3, "imagen": "/juegos/assets/matching/parque.png", "nombre": "Parque", "alt": "Parque" },
-  { "id": 4, "imagen": "/juegos/assets/matching/iglesia.png", "nombre": "Biblioteca", "alt": "Biblioteca" },
-  { "id": 5, "imagen": "/juegos/assets/matching/plaza.png", "nombre": "Hospital", "alt": "Hospital" },
-  { "id": 6, "imagen": "/juegos/assets/matching/parque.png", "nombre": "Escuela", "alt": "Escuela" }
+  { "id": 1, "imagen": "/juegos/assets/juego-parejas/Bautizo.webp", "nombre": "Bautizo", "alt": "Bautizo" },
+  { "id": 2, "imagen": "/juegos/assets/juego-parejas/Boda.webp", "nombre": "Boda", "alt": "Boda" },
+  { "id": 3, "imagen": "/juegos/assets/juego-parejas/Cancha-de-basket.webp", "nombre": "Cancha de basket", "alt": "Cancha de basket" },
+  { "id": 4, "imagen": "/juegos/assets/juego-parejas/Casa-Antigua.webp", "nombre": "Casa Antigua", "alt": "Casa Antigua" },
+  { "id": 5, "imagen": "/juegos/assets/juego-parejas/Cumpleaños.webp", "nombre": "Cumpleaños", "alt": "Cumpleaños" },
+  { "id": 6, "imagen": "/juegos/assets/juego-parejas/Equipo-Antiguo.webp", "nombre": "Equipo Antiguo", "alt": "Equipo Antiguo" },
+  { "id": 7, "imagen": "/juegos/assets/juego-parejas/Factura.webp", "nombre": "Factura", "alt": "Factura" },
+  { "id": 8, "imagen": "/juegos/assets/juego-parejas/Infraestructura-Antigua.webp", "nombre": "Infraestructura Antigua", "alt": "Infraestructura Antigua" },
+  { "id": 9, "imagen": "/juegos/assets/juego-parejas/Maquina-Escribir.webp", "nombre": "Máquina Escribir", "alt": "Máquina Escribir" },
+  { "id": 10, "imagen": "/juegos/assets/juego-parejas/Plaza-Antigua.webp", "nombre": "Plaza Antigua", "alt": "Plaza Antigua" },
+  { "id": 11, "imagen": "/juegos/assets/juego-parejas/Procesiones.webp", "nombre": "Procesiones", "alt": "Procesiones" },
+  { "id": 12, "imagen": "/juegos/assets/juego-parejas/Salon-Comunal.webp", "nombre": "Salón Comunal", "alt": "Salón Comunal" },
+  { "id": 13, "imagen": "/juegos/assets/juego-parejas/Tocadiscos.webp", "nombre": "Tocadiscos", "alt": "Tocadiscos" }
 ]

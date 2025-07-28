@@ -148,6 +148,15 @@ export default function RompecabezasPage() {
             <h2 className="text-3xl font-bold mb-4" style={{ color: "#56915D" }}>
               🎉 ¡Completaste el rompecabezas! 🎉
             </h2>
+            <div className="mt-4">
+              <img
+                src="/personajes/don-grano.png"
+                alt="Canita"
+                width={180}
+                height={180}
+                className="mx-auto"
+              />
+            </div>
             <button
               onClick={startNewGame}
               className="px-5 py-3 rounded-full text-lg shadow transition hover:scale-105"

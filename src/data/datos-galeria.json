@@ -60,21 +60,42 @@
             "id": 1,
             "url": "/galeria/deporte1.webp",
             "title": "Deporte 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/deporte2.webp",
+            "title": "Deporte 2"
+          },
+          {
+            "id": 3,
+            "url": "/galeria/deporte3.webp",
+            "title": "Deporte 3"
+          },
+          {
+            "id": 4,
+            "url": "/galeria/deporte4.webp",
+            "title": "Deporte 4"
           }
         ]
       },
       {
         "id": 5,
         "title": "Infraestructura",
-        "images": []
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/infraestructura1.webp",
+            "title": "Infraestructura 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/infraestructura2.webp",
+            "title": "Infraestructura 2"
+          }
+        ]
       },
       {
         "id": 6,
-        "title": "Artesanias",
-        "images": []
-      },
-      {
-        "id": 7,
         "title": "Actividades de la comunidad",
         "images": [
           {
@@ -91,16 +112,42 @@
             "id": 3,
             "url": "/galeria/actividadComunidad3.webp",
             "title": "Actividad comunidad 3"
+          },
+          {
+            "id": 4,
+            "url": "/galeria/actividadComunidad4.webp",
+            "title": "Actividad comunidad 4"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Familias",
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/familia1.webp",
+            "title": "Familia 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/familia2.webp",
+            "title": "Familia 2"
+          },
+          {
+            "id": 3,
+            "url": "/galeria/familia3.webp",
+            "title": "Familia 3"
+          },
+          {
+            "id": 4,
+            "url": "/galeria/familia4.webp",
+            "title": "Familia 4"
           }
         ]
       },
       {
         "id": 8,
-        "title": "Familias",
-        "images": []
-      },
-      {
-        "id": 9,
         "title": "Objetos antiguos",
         "images": [
           {
@@ -125,30 +172,41 @@
           },
           {
             "id": 5,
-            "url": "/galeria/objetoIndigena5.webp",
-            "title": "Objeto indigena 5"
+            "url": "/galeria/objetoAntiguo1.webp",
+            "title": "Objeto antiguo 1"
+          },
+          {
+            "id": 6,
+            "url": "/galeria/objetoAntiguo2.webp",
+            "title": "Objeto antiguo 2"
           }
         ]
       },
       {
-        "id": 10,
-        "title": "Recreacion",
-        "images": []
-      },
-      {
-        "id": 11,
-        "title": "Religion",
-        "images": []
-      },
-      {
-        "id": 13,
-        "title": "Terrenos",
-        "images": []
-      },
-      {
-        "id": 14,
-        "title": "Trabajo y locales",
-        "images": []
+        "id": 9,
+        "title": "Servicios públicos",
+        "images": [
+          {
+            "id": 1,
+            "url": "/galeria/servicioPublico1.webp",
+            "title": "Servicio público 1"
+          },
+          {
+            "id": 2,
+            "url": "/galeria/servicioPublico2.webp",
+            "title": "Servicio público 2"
+          },
+          {
+            "id": 3,
+            "url": "/galeria/servicioPublico3.webp",
+            "title": "Servicio público 3"
+          },
+          {
+            "id": 4,
+            "url": "/galeria/servicioPublico4.webp",
+            "title": "Servicio público 4"
+          }
+        ]
       }
     ]
   }
