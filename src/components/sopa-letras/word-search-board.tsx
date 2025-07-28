@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useWordSearchGenerator, { Cell } from "../../hooks/use-word-search-generator";
-import Image from "next/image";
+
 
 const allWords = [
   "CAÑA",
