@@ -209,11 +209,14 @@ export default function MemoriaPage() {
                       ? "cursor-not-allowed opacity-50"
                       : ""
                   }
-                  ${isFlipped(card) ? "ring-4" : "hover:shadow-xl"}
+                  ${
+                    isFlipped(card)
+                      ? "ring-4 ring-green-600"
+                      : "hover:shadow-xl"
+                  }
                 `}
                 style={{
                   backgroundColor: isFlipped(card) ? "#F9F4E1" : "#001E33",
-                  ringColor: isFlipped(card) ? "#56915D" : "transparent",
                 }}
               >
                 {isFlipped(card) ? (
