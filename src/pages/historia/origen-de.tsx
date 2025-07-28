@@ -34,7 +34,7 @@ export default function OrigenDePage() {
         </div>
 
         <div className="space-y-6">
-          {communityData.sections.map((section: { id: Key | null | undefined; title: string; content: string[]; image: { src: string; alt: string; position: "top" | "bottom" } | undefined; sources: string[] | undefined }, index: number | undefined) => (
+          {communityData.sections.map((section: { id: Key | null | undefined; title: string; content: string[]; image?: { src: string; alt: string; position: "top" | "bottom" } | undefined; sources: string[] | undefined }, index: number | undefined) => (
             <div key={section.id} className="relative">
               {/* Línea conectora entre secciones */}
               {index !== undefined && index < communityData.sections.length - 1 && (
