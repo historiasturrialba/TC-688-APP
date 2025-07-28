@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "question": "¿A qué se debe el nombre de la comunidad La Isabel?",
     "options": [
       "En honor a la Ermita Santa Isabel",
@@ -10,6 +11,7 @@
     "explanation": "La comunidad recibe su nombre en honor a la Ermita Santa Isabel, un punto de referencia histórico."
   },
   {
+    "id": 2,
     "question": "¿Existió algún lugar representativo que ya no esté?",
     "options": [
       "Un bar",
@@ -20,6 +22,7 @@
     "explanation": "La plaza era el lugar principal de reunión y actividades, pero ya no existe."
   },
   {
+    "id": 3,
     "question": "¿Cuáles fueron las primeras actividades agrícolas de la zona?",
     "options": [
       "Ganadería",
@@ -30,6 +33,7 @@
     "explanation": "El café y la caña de azúcar fueron los cultivos más importantes en los inicios de la comunidad."
   },
   {
+    "id": 4,
     "question": "¿Alguna vez hubo un beneficio de café, trapiche, aserradero, ingenio o alguna otra empresa agrícola?",
     "options": [
       "Un beneficio de café",
@@ -40,6 +44,7 @@
     "explanation": "Existió un beneficio de café que impulsó la economía local."
   },
   {
+    "id": 5,
     "question": "¿Para qué utilizaban antes los terrenos que ahora son las casas?",
     "options": [
       "Fincas ganadera",
@@ -50,6 +55,7 @@
     "explanation": "Antes de la urbanización, los terrenos eran principalmente cafetales."
   },
   {
+    "id": 6,
     "question": "¿Cómo celebraban las fiestas patronales?",
     "options": [
       "Con un baile",
@@ -60,6 +66,7 @@
     "explanation": "Las fiestas patronales se celebraban con carreras de cintas y ferias tradicionales."
   },
   {
+    "id": 7,
     "question": "¿Cuál era el grupo religioso con más afluencia?",
     "options": [
       "religión católica",
@@ -70,6 +77,7 @@
     "explanation": "La religión católica era la más practicada en la comunidad."
   },
   {
+    "id": 8,
     "question": "¿Cuál es el deporte que más se ha practicado y cuál es el que se está empezando a practicar más regularmente?",
     "options": [
       "Fútbol y béisbol",
@@ -80,6 +88,7 @@
     "explanation": "El fútbol ha sido tradicionalmente el deporte principal, pero el básquetbol está ganando popularidad."
   },
   {
+    "id": 9,
     "question": "¿Cuál era el lugar en donde más solían socializar?",
     "options": [
       "En las afueras de la pulpería",
@@ -90,6 +99,7 @@
     "explanation": "La plaza era el centro social de la comunidad."
   },
   {
+    "id": 10,
     "question": "¿Cuáles eran las principales fuentes de trabajo?",
     "options": [
       "Agricultura (café y caña)",
@@ -100,6 +110,7 @@
     "explanation": "La agricultura, especialmente el café y la caña, era la principal fuente de empleo."
   },
   {
+    "id": 11,
     "question": "¿Cuál es el segundo apellido del Dr. Valeriano Fernández….?",
     "options": [
       "Hernández",
@@ -110,6 +121,7 @@
     "explanation": "El segundo apellido del Dr. Valeriano Fernández es Ferraz."
   },
   {
+    "id": 12,
     "question": "¿Cuál institución está involucrada en el desarrollo de la comunidad?",
     "options": [
       "Los bomberos",
@@ -120,6 +132,7 @@
     "explanation": "La escuela y la asociación de desarrollo han sido claves en el progreso de la comunidad."
   },
   {
+    "id": 13,
     "question": "¿Quién fue el Dr. Valeriano Fernández?",
     "options": [
       "Un doctor",
@@ -130,6 +143,7 @@
     "explanation": "El Dr. Valeriano Fernández fue un destacado educador en la zona."
   },
   {
+    "id": 14,
     "question": "¿En qué fecha se fundó la escuela Dr. Valeriano Fernández Ferraz?",
     "options": [
       "7 de julio 1925",
